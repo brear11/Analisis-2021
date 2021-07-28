@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{179E2520-646E-4084-AFC7-67D744A0C4B0}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{1EB7F0D0-3D50-4347-8C43-D0CF86889627}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -80,6 +80,69 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{1F1495DD-613F-4512-BFC8-7C8DFB15740F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Ansi">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5E8B4E24-6BEB-47B3-86C4-C8E14AE562A4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="AnsiEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{958D6B49-5176-4C3F-9717-FA5F89B2604A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="AnsiSinEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8F72393D-119C-4D6E-B1D7-BA5B8716BBA5}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ConEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{77610966-32A7-447C-8CB9-1F5ACBBC221F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Encabezado">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C966B155-B1FD-4830-BF2D-BB318B39C9DB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Formato">
+      <DTS:VariableValue
+        DTS:DataType="8">Uft16-BE</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BC4B32B0-CCFD-45E1-9F4D-1C360ADA3CFF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Nombre">
+      <DTS:VariableValue
+        DTS:DataType="8">Prueba.1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{E7CD483F-BDE8-4E18-9268-92072BF8C865}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -107,12 +170,144 @@
       <DTS:VariableValue
         DTS:DataType="8">C:\Users\esteb\source\repos\Analisis-2021\Tareas\documentos\</DTS:VariableValue>
     </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0B73D290-0CE0-46D5-B50D-0B0CA3899E67}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="SinEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{26FF6495-93B4-4B0B-9E52-558FA4CF0A6E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Unicode">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DF737991-C662-4C07-9F9D-4835FEAAC668}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="UnicodeEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D4AE3319-68E6-4E83-A666-35FA0E9F8166}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="UnicodeSinEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Ansi Con Encabesados"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{e6478016-4333-4133-961a-093bfccbf652}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Ansi Con Encabesados"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::AnsiEncabezados]= @[User::AnsiEncabezados]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Ansi sin encabezados"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{d4ca16cf-0cb7-422a-9db8-bd068f10e7e4}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Ansi sin encabezados"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::AnsiSinEncabezados]= @[User::AnsiSinEncabezados]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Archivos Ansi"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{624c4076-9120-4974-9fb8-e91d1c6c9419}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Archivos Ansi"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::Ansi]= @[User::Ansi]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Archivos Unicode"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{D5354B82-7B29-402B-9449-7E1B1B231078}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Archivos Unicode"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::Unicode]= @[User::Unicode]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Con Encabezados"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{38352402-ddc6-4c66-a0ed-928946a353b2}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Con Encabezados"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::ConEncabezados]= @[User::ConEncabezados]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Contador a Incrementar"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{D80B548F-040E-497E-813E-BD24898A273F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contador a Incrementar"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
+      DTS:Disabled="True"
       DTS:DTSID="{BFB96724-F0ED-4498-871B-CB3D956069FE}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
@@ -130,7 +325,7 @@
             <FEFEProperty
               FileSpec="*.txt" />
             <FEFEProperty
-              FileNameRetrievalType="0" />
+              FileNameRetrievalType="1" />
             <FEFEProperty
               Recurse="0" />
           </ForEachFileEnumeratorProperties>
@@ -139,6 +334,24 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{34655915-724C-41B0-84B8-3F9364806044}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{F9B6C551-4091-42C5-86C3-492548581F25}"
+              SQLTask:SqlStatementSource="SELECT        Nombre, Tipo, Encabezado&#xA;FROM            Documentos&#xA;WHERE        (Nombre = 'Prueba1')"
+              SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\Foreach Loop Container\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
@@ -146,7 +359,7 @@
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <ScriptProject
@@ -154,7 +367,7 @@
               VSTAMajorVersion="15"
               VSTAMinorVersion="0"
               Language="CSharp"
-              ReadOnlyVariables="User::RutaCompleta">
+              ReadOnlyVariables="User::NombreArchivo">
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -379,10 +592,11 @@ namespace ST_6542878f5d444a36b88a7dbf4b8a205d
 		{
             // TODO: Add your code here
 
-            MessageBox.Show(Dts.Variables["RutaCompleta"].Value.ToString());
+           // MessageBox.Show(Dts.Variables["RutaCompleta"].Value.ToString());
+           MessageBox.Show(Dts.Variables["NombreArchivo"].Value.ToString());
 
 
-			Dts.TaskResult = (int)ScriptResults.Success;
+            Dts.TaskResult = (int)ScriptResults.Success;
 		}
 
         #region ScriptResults declaration
@@ -495,7 +709,7 @@ namespace ST_6542878f5d444a36b88a7dbf4b8a205d
     <msb:CodeName>ST_6542878f5d444a36b88a7dbf4b8a205d</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>ST_6542878f5d444a36b88a7dbf4b8a205d</msb:DisplayName>
-    <msb:ProjectId>{D6F88076-4F85-4AE9-A255-E9198117E00E}</msb:ProjectId>
+    <msb:ProjectId>{5EABE18D-9BD4-4621-9157-5FC70863592D}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="ST_6542878f5d444a36b88a7dbf4b8a205d.csproj" />
@@ -637,7 +851,7 @@ namespace ST_6542878f5d444a36b88a7dbf4b8a205d.Properties {
               <BinaryItem
                 Name="ST_6542878f5d444a36b88a7dbf4b8a205d.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAF56/2AAAAAAAAAAAOAAIiALATAAAA4AAAAIAAAAAAAA0i0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAH2xAWEAAAAAAAAAAOAAIiALATAAAA4AAAAIAAAAAAAA0i0A
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIAtAABPAAAAAEAAAHgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -646,7 +860,7 @@ AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAHgEAAAAQAAAAAYAAAAQAAAAAAAAAAAAAAAAAABAAABA
 LnJlbG9jAAAMAAAAAGAAAAACAAAAFgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAC0
 LQAAAAAAAEgAAAACAAUA7CAAANwLAAABAAAAAAAAAMgsAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMoCKBAAAApvEQAACnIBAABwbxIAAApvEwAACm8UAAAKKBUA
-AAomAigQAAAKFm8WAAAKKh4CKBcAAAoqHgIoGAAACiqufgEAAAQtHnIbAABw0AMAAAIoGQAACm8a
+AAomAigQAAAKFm8WAAAKKh4CKBcAAAoqHgIoGAAACiqufgEAAAQtHnIdAABw0AMAAAIoGQAACm8a
 AAAKcxsAAAqAAQAABH4BAAAEKhp+AgAABCoeAoACAAAEKhp+AwAABCoeAigcAAAKKi5zCAAABoAD
 AAAEKgAAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAANwDAAAjfgAASAQAAJAF
 AAAjU3RyaW5ncwAAAADYCQAAkAAAACNVUwBoCgAAEAAAACNHVUlEAAAAeAoAAGQBAAAjQmxvYgAA
@@ -665,7 +879,7 @@ nQMlANEA0gIrAIkA/AIvANkAcAUzAMEAYQUBAHEAJQQGAIkAJQQGAOkAiQA5AOkAgAVAAJEAJQRF
 ALEAJQQGAAgAFABeAAgAGABjACkAcwDLAC4ACwCjAC4AEwCsAC4AGwDLAC4AIwDUAC4AKwD9AC4A
 MwD9AC4AOwD9AC4AQwDUAC4ASwADAS4AUwD9AC4AWwAaAUMAYwBjAEkAcwDLAGEAewBjAGMAawBj
 AAMAAQAEAAMAAAAVBJQAAADoAJkAAABMBZ4AAgAEAAMAAgAFAAUAAQAGAAUAAgAHAAcABIAAAAEA
-AADFHn+VAAAAAAAAOgAAAAQAAAAAAAAAAAAAAEwAMQAAAAAADwAAAAAAAAAAAAAAVQAFAwAAAAAE
+AADHHo5fAAAAAAAAOgAAAAQAAAAAAAAAAAAAAEwAMQAAAAAADwAAAAAAAAAAAAAAVQAFAwAAAAAE
 AAAAAAAAAAAAAABMAKYDAAAAAA8AAAAAAAAAAAAAAFUACgAAAAAABAAAAAAAAAAAAAAATAAOBQAA
 AAAAAAAAAQAAAHYEAAAFAAIAAAAAPE1vZHVsZT4ATWljcm9zb2Z0LlNxbFNlcnZlci5NYW5hZ2Vk
 RFRTAHZhbHVlX18AbXNjb3JsaWIAU1RfNjU0Mjg3OGY1ZDQ0NGEzNmI4OGE3ZGJmNGI4YTIwNWQA
@@ -692,10 +906,10 @@ LlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTVF82NTQyODc4
 ZjVkNDQ0YTM2Yjg4YTdkYmY0YjhhMjA1ZC5Qcm9wZXJ0aWVzAGdldF9WYXJpYWJsZXMAU2V0dGlu
 Z3MAU3lzdGVtLldpbmRvd3MuRm9ybXMAU3VjY2VzcwBnZXRfRHRzAFNjcmlwdFJlc3VsdHMAT2Jq
 ZWN0AGdldF9EZWZhdWx0AERpYWxvZ1Jlc3VsdABzZXRfVGFza1Jlc3VsdABTaG93AE1lc3NhZ2VC
-b3gAZ2V0X0Fzc2VtYmx5AAAAAAAZUgB1AHQAYQBDAG8AbQBwAGwAZQB0AGEAAHFTAFQAXwA2ADUA
-NAAyADgANwA4AGYANQBkADQANAA0AGEAMwA2AGIAOAA4AGEANwBkAGIAZgA0AGIAOABhADIAMAA1
-AGQALgBQAHIAbwBwAGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAAJ1wpcxv+lpE
-tFESeXlnvVgABCABAQgDIAABBSABARERBCABAQ4FIAEBEVEEIAASYQQgABJlBSABEmkcAyAAHAMg
+b3gAZ2V0X0Fzc2VtYmx5AAAAAAAbTgBvAG0AYgByAGUAQQByAGMAaABpAHYAbwAAcVMAVABfADYA
+NQA0ADIAOAA3ADgAZgA1AGQANAA0ADQAYQAzADYAYgA4ADgAYQA3AGQAYgBmADQAYgA4AGEAMgAw
+ADUAZAAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAAANLf6EV3b49N
+r894C5xgVC4ABCABAQgDIAABBSABARERBCABAQ4FIAEBEVEEIAASYQQgABJlBSABEmkcAyAAHAMg
 AA4FAAERcQ4GAAESdRF5BCAAEn0GIAIBDhJ9CLd6XFYZNOCJCImEXc2AgMyRBAAAAAAEAQAAAAMG
 EkkDBhJNAwYSEAIGCAMGERQEAAASSQQAABJNBQABARJNBAAAEhADAAABBAgAEkkECAASTQQIABIQ
 CAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTVF82
@@ -709,14 +923,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAtC0AAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2NvcmVlLmRsbAAA
 AAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAA
 AAAASAAAAFhAAAAaBAAAAAAAAAAAAAAaBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYA
-TwAAAAAAvQTv/gAAAQAAAAEAf5XFHgAAAQB/lcUePwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAA
+TwAAAAAAvQTv/gAAAQAAAAEAjl/HHgAAAQCOX8cePwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAA
 AEQAAAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkA
 bwBuAAAAAAAAALAEegMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAVgMAAAEAMAAw
 ADAAMAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAA
 YQBuAHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBu
 AAAAAABTAFQAXwA2ADUANAAyADgANwA4AGYANQBkADQANAA0AGEAMwA2AGIAOAA4AGEANwBkAGIA
 ZgA0AGIAOABhADIAMAA1AGQAAAA+AA8AAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAw
-AC4ANwA4ADcANwAuADMAOAAyADcAMQAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUA
+AC4ANwA4ADcAOQAuADIANAA0ADYAMgAAAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUA
 AABTAFQAXwA2ADUANAAyADgANwA4AGYANQBkADQANAA0AGEAMwA2AGIAOAA4AGEANwBkAGIAZgA0
 AGIAOABhADIAMAA1AGQALgBkAGwAbAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgA
 dAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAQAAgACAAMgAwADIAMQAAACoAAQABAEwAZQBnAGEAbABU
@@ -725,8 +939,8 @@ bgBhAG0AZQAAAFMAVABfADYANQA0ADIAOAA3ADgAZgA1AGQANAA0ADQAYQAzADYAYgA4ADgAYQA3
 AGQAYgBmADQAYgA4AGEAMgAwADUAZAAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEA
 bQBlAAAAAABTAFQAXwA2ADUANAAyADgANwA4AGYANQBkADQANAA0AGEAMwA2AGIAOAA4AGEANwBk
 AGIAZgA0AGIAOABhADIAMAA1AGQAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4A
-AAAxAC4AMAAuADcAOAA3ADcALgAzADgAMgA3ADEAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAg
-AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADcAOAA3ADcALgAzADgAMgA3ADEAAAAAAAAAAAAAAAAA
+AAAxAC4AMAAuADcAOAA3ADkALgAyADQANAA2ADIAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAg
+AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADcAOAA3ADkALgAyADQANAA2ADIAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -761,149 +975,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <pipeline
               version="1">
               <components>
-                <component
-                  refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
-                  description="Destino de OLE DB"
-                  name="Destino de OLE DB"
-                  usesDispositions="true"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                      name="OpenRowset">[dbo].[Documentos]</property>
-                    <property
-                      dataType="System.String"
-                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="Comando SQL para ejecutar."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
-                      name="AccessMode"
-                      typeConverter="AccessMode">3</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
-                      name="FastLoadOptions">TABLOCK</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
-                      connectionManagerID="Package.ConnectionManagers[(local).Archivos 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[(local).Archivos 1]"
-                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
-                      errorOrTruncationOperation="Insertar"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="Entrada de destino de OLE DB">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Nombre]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Nombre"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Nombre]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Encabezado]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Encabezado"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Encabezado]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Encabezado]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[Formato]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Formato"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Formato]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Nombre]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Nombre" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Tipo]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Tipo" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[Encabezado]"
-                          dataType="bool"
-                          name="Encabezado" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Salida de error de destino de OLE DB"
-                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
                 <component
                   refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano"
                   componentClassID="Microsoft.FlatFileSource"
@@ -1054,13 +1125,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                   </outputs>
                 </component>
               </components>
-              <paths>
-                <path
-                  refId="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
-                  endId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
-                  name="Salida de origen de archivo plano"
-                  startId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
-              </paths>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
@@ -1068,13 +1132,210 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{E0645D58-4EFE-4157-B92C-C974C7681136}"
-          DTS:ObjectName="{E0645D58-4EFE-4157-B92C-C974C7681136}"
+          DTS:DTSID="{8630F51D-D1DF-4015-844F-DD03C80FE6AB}"
+          DTS:ObjectName="{8630F51D-D1DF-4015-844F-DD03C80FE6AB}"
           DTS:ValueIndex="0"
-          DTS:VariableName="User::RutaCompleta" />
+          DTS:VariableName="User::NombreArchivo" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sin Encabezados"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{f5cd4ba1-a145-4cb6-83d5-18bbf5bab6a4}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sin Encabezados"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::SinEncabezados]= @[User::SinEncabezados]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{E88AAE16-9584-4FB2-99D8-1F4EFCC23E42}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Unicode con encabezados"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{f391224d-b51e-4ceb-86d1-ea8e028e5a11}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Unicode con encabezados"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::UnicodeEncabezados]= @[User::UnicodeEncabezados]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Unicode sin encabezados"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{120003e8-e54f-46ac-9cdb-cdca0bf7c3e0}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Unicode sin encabezados"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::UnicodeSinEncabezados]= @[User::UnicodeSinEncabezados]+1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{486A1050-02CD-4B3A-A47C-76CE1C81A272}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Formato]==&quot;Ansi&quot;"
+      DTS:From="Package\Contador a Incrementar"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Archivos Ansi" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{08D29235-A8F3-4C5B-BD8A-BCB6F73BF169}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Formato]!=&quot;Ansi&quot;"
+      DTS:From="Package\Contador a Incrementar"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Archivos Unicode" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{1DE6679F-C138-4817-8806-31CB9DD21EFB}"
+      DTS:From="Package\Con Encabezados"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 10"
+      DTS:To="Package\Ansi Con Encabesados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{D6550F28-B011-41C7-8892-7281F7F9C5DC}"
+      DTS:From="Package\Con Encabezados"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11"
+      DTS:To="Package\Unicode con encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
+      DTS:CreationName=""
+      DTS:DTSID="{EDD8010F-5B19-4A8F-AEDD-6D2313DCE8E0}"
+      DTS:From="Package\Ansi Con Encabesados"
+      DTS:ObjectName="Constraint 12"
+      DTS:To="Package\Tarea Flujo de datos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
+      DTS:CreationName=""
+      DTS:DTSID="{004BEB32-D4B3-4DCB-BC1D-5F8DE51608BC}"
+      DTS:From="Package\Unicode con encabezados"
+      DTS:ObjectName="Constraint 13"
+      DTS:To="Package\Tarea Flujo de datos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
+      DTS:CreationName=""
+      DTS:DTSID="{23532A6C-F021-4C4F-B8C9-6A59074C3528}"
+      DTS:From="Package\Unicode sin encabezados"
+      DTS:ObjectName="Constraint 14"
+      DTS:To="Package\Tarea Flujo de datos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 15]"
+      DTS:CreationName=""
+      DTS:DTSID="{55F9E5CB-C95D-457C-AA28-989736E65FD5}"
+      DTS:From="Package\Ansi sin encabezados"
+      DTS:ObjectName="Constraint 15"
+      DTS:To="Package\Tarea Flujo de datos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{46A5DD6E-BBB3-444D-8E36-63F3E24F487A}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Encabezado]==False"
+      DTS:From="Package\Contador a Incrementar"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Sin Encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{1B9C1694-54F0-48B9-B6B2-584E131B2FEF}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::Encabezado] ==True"
+      DTS:From="Package\Contador a Incrementar"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Con Encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{D4FAE5A1-3D67-49F2-854D-8DA712E9A56E}"
+      DTS:From="Package\Archivos Ansi"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Ansi sin encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{9363B1C7-A1A7-4E09-BC3A-D0533112366C}"
+      DTS:From="Package\Archivos Unicode"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Unicode sin encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{F2217BB8-65F7-4DA6-894C-8B4FE113E9CD}"
+      DTS:From="Package\Sin Encabezados"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Ansi sin encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{FA2A9F2F-31E2-4FA5-9E34-240294E0415D}"
+      DTS:From="Package\Sin Encabezados"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Unicode sin encabezados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{F56CB46C-689C-4C6D-8E9F-B88604423CD4}"
+      DTS:From="Package\Archivos Ansi"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Ansi Con Encabesados" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{7B7F5D96-4287-41C9-B541-C6DC2EF5FDB3}"
+      DTS:From="Package\Archivos Unicode"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Unicode con encabezados" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -1086,7 +1347,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="131,42"
           Id="Package\Foreach Loop Container\Script Task"
@@ -1094,7 +1355,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="176,42"
           Id="Package\Foreach Loop Container\Tarea Flujo de datos"
-          TopLeft="161,63" />
+          TopLeft="58,11" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Foreach Loop Container\Execute SQL Task"
+          TopLeft="306,130" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
@@ -1102,36 +1367,566 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="642,419"
           Id="Package\Foreach Loop Container"
           TopLeft="455,71" />
-      </GraphLayout>
-    </LayoutInfo>
-  </Package>
-  <TaskHost
-    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="191,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano"
-          TopLeft="506,161" />
+          Size="192,42"
+          Id="Package\Contador a Incrementar"
+          TopLeft="550,535" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB"
-          TopLeft="515,331" />
+          Size="159,42"
+          Id="Package\Archivos Unicode"
+          TopLeft="755,682" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Archivos Ansi"
+          TopLeft="980,674" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Con Encabezados"
+          TopLeft="310,704" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sin Encabezados"
+          TopLeft="548,683" />
+        <NodeLayout
+          Size="200,57"
+          Id="Package\Unicode con encabezados"
+          TopLeft="346,887" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Unicode sin encabezados"
+          TopLeft="608,952" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Ansi Con Encabesados"
+          TopLeft="63,925" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Ansi sin encabezados"
+          TopLeft="946,945" />
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
-          TopLeft="600.25,203">
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="701.2,577">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,128"
+              EndConnector="349.3,97"
               Start="0,0"
-              End="0,120.5">
+              End="349.3,89.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,120.5" />
+                    End="0,24.9298245614035" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.9298245614035"
+                    Point2="0,28.9298245614035"
+                    Point3="4,28.9298245614035" />
+                  <mssgle:LineSegment
+                    End="345.3,28.9298245614035" />
+                  <mssgle:CubicBezierSegment
+                    Point1="345.3,28.9298245614035"
+                    Point2="349.3,28.9298245614035"
+                    Point3="349.3,32.9298245614035" />
+                  <mssgle:LineSegment
+                    End="349.3,89.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="166.65,33.9298245614035,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="664.4,577">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="170.1,105"
+              Start="0,0"
+              End="170.1,97.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9354838709678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.9354838709678"
+                    Point2="0,46.9354838709678"
+                    Point3="4,46.9354838709678" />
+                  <mssgle:LineSegment
+                    End="166.1,46.9354838709678" />
+                  <mssgle:CubicBezierSegment
+                    Point1="166.1,46.9354838709678"
+                    Point2="170.1,46.9354838709678"
+                    Point3="170.1,50.9354838709678" />
+                  <mssgle:LineSegment
+                    End="170.1,97.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="77.05,51.9354838709678,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="627.05,577">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,106"
+              Start="0,0"
+              End="0,98.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,98.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,41.25,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="590.8,577">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-200.3,127"
+              Start="0,0"
+              End="-200.3,119.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.8771929824561" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.8771929824561"
+                    Point2="0,37.8771929824561"
+                    Point3="-4,37.8771929824561" />
+                  <mssgle:LineSegment
+                    End="-196.3,37.8771929824561" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-196.3,37.8771929824561"
+                    Point2="-200.3,37.8771929824561"
+                    Point3="-200.3,41.8771929824561" />
+                  <mssgle:LineSegment
+                    End="-200.3,119.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-108.15,42.8771929824561,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="1072.66666666667,716">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.66666666666674,229"
+              Start="0,0"
+              End="-8.66666666666674,221.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,110.836257196955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,110.836257196955"
+                    Point2="0,114.836257196955"
+                    Point3="-4,114.836257196955" />
+                  <mssgle:LineSegment
+                    End="-4.66666666666674,114.836257196955" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.66666666666674,114.836257196955"
+                    Point2="-8.66666666666674,114.836257196955"
+                    Point3="-8.66666666666674,118.836257196955" />
+                  <mssgle:LineSegment
+                    End="-8.66666666666674,221.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="859.666666666667,724">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121.666666666667,228"
+              Start="0,0"
+              End="-121.666666666667,220.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,110.270454190729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,110.270454190729"
+                    Point2="0,114.270454190729"
+                    Point3="-4,114.270454190729" />
+                  <mssgle:LineSegment
+                    End="-117.666666666667,114.270454190729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117.666666666667,114.270454190729"
+                    Point2="-121.666666666667,114.270454190729"
+                    Point3="-121.666666666667,118.270454190729" />
+                  <mssgle:LineSegment
+                    End="-121.666666666667,220.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="651.333333333333,725">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="355.666666666667,220"
+              Start="0,0"
+              End="355.666666666667,212.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,106.168201563857" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,106.168201563857"
+                    Point2="0,110.168201563857"
+                    Point3="4,110.168201563857" />
+                  <mssgle:LineSegment
+                    End="351.666666666667,110.168201563857" />
+                  <mssgle:CubicBezierSegment
+                    Point1="351.666666666667,110.168201563857"
+                    Point2="355.666666666667,110.168201563857"
+                    Point3="355.666666666667,114.168201563857" />
+                  <mssgle:LineSegment
+                    End="355.666666666667,212.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="601.666666666667,725">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.3333333333334,227"
+              Start="0,0"
+              End="73.3333333333334,219.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,109.787005721149" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,109.787005721149"
+                    Point2="0,113.787005721149"
+                    Point3="4,113.787005721149" />
+                  <mssgle:LineSegment
+                    End="69.3333333333334,113.787005721149" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.3333333333334,113.787005721149"
+                    Point2="73.3333333333334,113.787005721149"
+                    Point3="73.3333333333334,117.787005721149" />
+                  <mssgle:LineSegment
+                    End="73.3333333333334,219.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="1028.33333333333,716">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-844,209"
+              Start="0,0"
+              End="-844,201.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,100.837933368429" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,100.837933368429"
+                    Point2="0,104.837933368429"
+                    Point3="-4,104.837933368429" />
+                  <mssgle:LineSegment
+                    End="-840,104.837933368429" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-840,104.837933368429"
+                    Point2="-844,104.837933368429"
+                    Point3="-844,108.837933368429" />
+                  <mssgle:LineSegment
+                    End="-844,201.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="809.333333333333,724">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-331.333333333333,163"
+              Start="0,0"
+              End="-331.333333333333,155.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.7055169444616" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,77.7055169444616"
+                    Point2="0,81.7055169444616"
+                    Point3="-4,81.7055169444616" />
+                  <mssgle:LineSegment
+                    End="-327.333333333333,81.7055169444616" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-327.333333333333,81.7055169444616"
+                    Point2="-331.333333333333,81.7055169444616"
+                    Point3="-331.333333333333,85.7055169444616" />
+                  <mssgle:LineSegment
+                    End="-331.333333333333,155.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="365,746">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-239.333333333333,179"
+              Start="0,0"
+              End="-239.333333333333,171.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,85.6358118361153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,85.6358118361153"
+                    Point2="0,89.6358118361153"
+                    Point3="-4,89.6358118361153" />
+                  <mssgle:LineSegment
+                    End="-235.333333333333,89.6358118361153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-235.333333333333,89.6358118361153"
+                    Point2="-239.333333333333,89.6358118361153"
+                    Point3="-239.333333333333,93.6358118361153" />
+                  <mssgle:LineSegment
+                    End="-239.333333333333,171.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="415,746">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,141"
+              Start="0,0"
+              End="0,133.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,133.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="562,1108" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 12]"
+          TopLeft="155,967">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="444.6,141"
+              Start="0,0"
+              End="444.6,133.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.7898089171974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,94.7898089171974"
+                    Point2="0,98.7898089171974"
+                    Point3="4,98.7898089171974" />
+                  <mssgle:LineSegment
+                    End="440.6,98.7898089171974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="440.6,98.7898089171974"
+                    Point2="444.6,98.7898089171974"
+                    Point3="444.6,102.789808917197" />
+                  <mssgle:LineSegment
+                    End="444.6,133.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="446,944">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187.2,164"
+              Start="0,0"
+              End="187.2,156.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,86.6532663316583" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,86.6532663316583"
+                    Point2="0,90.6532663316583"
+                    Point3="4,90.6532663316583" />
+                  <mssgle:LineSegment
+                    End="183.2,90.6532663316583" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.2,90.6532663316583"
+                    Point2="187.2,90.6532663316583"
+                    Point3="187.2,94.6532663316583" />
+                  <mssgle:LineSegment
+                    End="187.2,156.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 14]"
+          TopLeft="706.5,994">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-39.7,114"
+              Start="0,0"
+              End="-39.7,106.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.0150753768844" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59.0150753768844"
+                    Point2="0,63.0150753768844"
+                    Point3="-4,63.0150753768844" />
+                  <mssgle:LineSegment
+                    End="-35.7,63.0150753768844" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-35.7,63.0150753768844"
+                    Point2="-39.7,63.0150753768844"
+                    Point3="-39.7,67.0150753768844" />
+                  <mssgle:LineSegment
+                    End="-39.7,106.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 15]"
+          TopLeft="1035.5,987">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-335.1,121"
+              Start="0,0"
+              End="-335.1,113.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,80.7770700636942" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,80.7770700636942"
+                    Point2="0,84.7770700636942"
+                    Point3="-4,84.7770700636942" />
+                  <mssgle:LineSegment
+                    End="-331.1,84.7770700636942" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-331.1,84.7770700636942"
+                    Point2="-335.1,84.7770700636942"
+                    Point3="-335.1,88.7770700636942" />
+                  <mssgle:LineSegment
+                    End="-335.1,113.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1142,19 +1937,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano"
+          TopLeft="506,161" />
+      </GraphLayout>
+    </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de OLE DB">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
