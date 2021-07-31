@@ -1,0 +1,30 @@
+
+
+
+declare @NombreArchivo as varchar(100)= Tercero.Txt;
+Select * from Documentos
+ Where Nombre='Tercero.Txt';
+
+
+
+declare @NombreArchivo as varchar(100)= ?;
+Select * from Documentos
+ Where Nombre=?;
+
+
+
+ declare @NA as varchar(100)= '?';
+  select * 
+  from Documentos as D
+  where d.Nombre=@NA;
+
+
+  declare @NA as varchar(100)= 'Tarea3.Txt';
+  select * 
+  from Documentos as D
+  where d.Nombre=@NA;
+
+  declare @NA as varchar(100)= 'Tarea3.Txt';
+  select Nombre,Tipo,Encabezado
+  from Documentos as D
+  where d.Nombre=@NA;
