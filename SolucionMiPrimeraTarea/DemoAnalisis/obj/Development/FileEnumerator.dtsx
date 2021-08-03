@@ -1,0 +1,1279 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/3/2021 4:56:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TAKUDESKTOP"
+  DTS:CreatorName="TAKUDESKTOP\esteb"
+  DTS:DTSID="{8A9C3B5B-E126-49A1-A0F3-149D0DD6B961}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{F8EFE290-23F0-4DC9-B5BB-ACCB141DEC05}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4E1C89A8-9748-42C8-8E09-78E2AAEAB83F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Ansi">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{399664B9-CE91-4C7F-AC29-6BEEC50F409B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="AnsiConEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1BCF9A39-39C1-4AE0-9ECC-A4967DE01514}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="AnsiSinEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D6690982-1845-4BCA-8AEE-3959535779AD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ConEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{213A14BE-FF1C-4CDE-83A1-37BFF2473390}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Encabezado">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5B2614EA-A0E5-4214-AFE7-A775CC3A110F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Nombre">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{64A2CF38-6DBF-4D31-9D93-757E8384B5E5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="NombreArchivo">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C584B7C0-C67D-439E-933A-5ADC7C9DED0E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="SinEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{081549FA-A503-4248-AE13-86BE18D9C95A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Tipo">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A9FC7867-1569-4831-B62F-2E09B7C1BE22}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="UbicacionCarpeta">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\esteb\source\repos\Analisis-2021\Tareas\documentos\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{61A0BCA5-140E-4450-9468-121681120814}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Unicode">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B27A8E4C-C196-4145-BB07-0AFC39CE3D88}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="UnicodeConEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0C9A8197-B86C-45D6-A033-797D8D71F99A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="UnicodeSinEncabezados">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{328CE01F-D935-4762-8CA9-24FFDEAA76B2}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{12DEE2B1-7989-4475-901B-FFB9B4762EDF}"
+        DTS:ObjectName="{12DEE2B1-7989-4475-901B-FFB9B4762EDF}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\esteb\source\repos\Analisis-2021\Tareas\documentos\" />
+            <FEFEProperty
+              FileSpec="*.txt" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Ansi"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{a1cab248-6010-4918-aaf4-c72087d71431}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Ansi"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="3">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::Ansi]= @[User::Ansi]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Ansi Con Encabezados"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{91B4C3B7-6911-415B-A409-164DE8EFC1A7}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Ansi Con Encabezados"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="3">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::AnsiConEncabezados]= @[User::AnsiConEncabezados]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Ansi Sin Encabezados"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{6C4E3C68-661A-4429-85CF-806660399D1A}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Ansi Sin Encabezados"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::AnsiSinEncabezados]= @[User::AnsiSinEncabezados]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Con Encabezados"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{E4088A7D-414E-4630-8D5B-9C4A35E59A67}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Con Encabezados"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::ConEncabezados]= @[User::ConEncabezados]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Contador a Incrementar"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{08A13E80-2209-4F14-8DA3-71D3374D9E63}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Contador a Incrementar"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{AFC9B1B2-3AAF-47F6-AAEA-15AEB4A6FDB7}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{0A8689BE-71A1-4B85-93F8-E28CD9794894}"
+              SQLTask:SqlStatementSource="declare @N as varchar(100)=?;&#xA;&#xA;select Nombre,Tipo,Encabezado&#xA;From dbo.Documentos as d&#xA;where Nombre like @N+'%';"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="0"
+                SQLTask:DtsVariableName="User::Nombre" />
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="1"
+                SQLTask:DtsVariableName="User::Tipo" />
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="2"
+                SQLTask:DtsVariableName="User::Encabezado" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::NombreArchivo"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Sin Encabezados"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{0f56930d-cb3c-4fbc-a4ba-4507deb535fc}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Sin Encabezados"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::SinEncabezados]= @[User::SinEncabezados]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{D17A1761-A33B-413C-8E77-6517D781E384}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{F79BAC8F-29FD-4C0F-9016-0A595226E4C9}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos 1"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Unicode Con Encabezados"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{60a9e5c2-9de6-453d-b488-21dab11aaee9}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Unicode Con Encabezados"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::UnicodeConEncabezados]= @[User::UnicodeConEncabezados]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Unicode Sin Encabezados"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{046cf4c2-3405-4cb8-88b6-0d818d957f6b}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Unicode Sin Encabezados"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::UnicodeSinEncabezados]= @[User::UnicodeSinEncabezados]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Unicodes"
+          DTS:CreationName="Microsoft.ExpressionTask"
+          DTS:Description="Expression Task"
+          DTS:DTSID="{29b12174-662a-47cc-9495-50866eb2e884}"
+          DTS:ExecutableType="Microsoft.ExpressionTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Unicodes"
+          DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExpressionTask
+              Expression="@[User::Unicode]= @[User::Unicode]+1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{A0E657DC-3EC4-40F8-9032-595321242A46}"
+          DTS:From="Package\Foreach Loop Container\Tarea Flujo de datos"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Foreach Loop Container\Execute SQL Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{30C6D76F-D10A-4939-A936-96C58EEA7012}"
+          DTS:From="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Foreach Loop Container\Contador a Incrementar" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 10]"
+          DTS:CreationName=""
+          DTS:DTSID="{FB88D43D-E24E-44B5-8FB6-1B424C22CD0D}"
+          DTS:From="Package\Foreach Loop Container\Unicodes"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 10"
+          DTS:To="Package\Foreach Loop Container\Unicode Con Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 11]"
+          DTS:CreationName=""
+          DTS:DTSID="{7DEB8B91-C3EF-421A-B3F8-069CF8354C9C}"
+          DTS:From="Package\Foreach Loop Container\Con Encabezados"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 11"
+          DTS:To="Package\Foreach Loop Container\Unicode Con Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 12]"
+          DTS:CreationName=""
+          DTS:DTSID="{5D8FDBC2-328E-4C45-838F-C978CAB1973B}"
+          DTS:From="Package\Foreach Loop Container\Unicodes"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 12"
+          DTS:To="Package\Foreach Loop Container\Unicode Sin Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 13]"
+          DTS:CreationName=""
+          DTS:DTSID="{84B15F2D-878E-4D55-8C35-C3618E49F204}"
+          DTS:From="Package\Foreach Loop Container\Sin Encabezados"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 13"
+          DTS:To="Package\Foreach Loop Container\Unicode Sin Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 14]"
+          DTS:CreationName=""
+          DTS:DTSID="{7FE718D0-E01E-482B-A3E8-C7E379564810}"
+          DTS:From="Package\Foreach Loop Container\Ansi Con Encabezados"
+          DTS:ObjectName="Constraint 14"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 15]"
+          DTS:CreationName=""
+          DTS:DTSID="{574AEE8E-2CB7-4F4B-B333-FBACCC02C703}"
+          DTS:From="Package\Foreach Loop Container\Ansi Sin Encabezados"
+          DTS:ObjectName="Constraint 15"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 16]"
+          DTS:CreationName=""
+          DTS:DTSID="{162612DB-92E4-4648-AD4F-B8640F760185}"
+          DTS:From="Package\Foreach Loop Container\Unicode Con Encabezados"
+          DTS:ObjectName="Constraint 16"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 17]"
+          DTS:CreationName=""
+          DTS:DTSID="{1A58D4BE-3D28-4F86-82FD-371FC085C1E1}"
+          DTS:From="Package\Foreach Loop Container\Unicode Sin Encabezados"
+          DTS:ObjectName="Constraint 17"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{673344B7-BC6E-42E6-8DED-EAE1C2351951}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::Encabezado]==&quot;True&quot;"
+          DTS:From="Package\Foreach Loop Container\Contador a Incrementar"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Foreach Loop Container\Con Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{67489ACF-F072-4E46-971C-44D03E959E62}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::Encabezado]==&quot;False&quot;"
+          DTS:From="Package\Foreach Loop Container\Contador a Incrementar"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\Foreach Loop Container\Sin Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{A1D94962-3CE1-4AB4-8711-D4652FB721E7}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::Tipo]!=&quot;Ansi&quot;"
+          DTS:From="Package\Foreach Loop Container\Contador a Incrementar"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 4"
+          DTS:To="Package\Foreach Loop Container\Unicodes" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 5]"
+          DTS:CreationName=""
+          DTS:DTSID="{F8F4E9B8-8728-4223-9CD2-96F1FF3FE4DF}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::Tipo]==&quot;Ansi&quot;"
+          DTS:From="Package\Foreach Loop Container\Contador a Incrementar"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 5"
+          DTS:To="Package\Foreach Loop Container\Ansi" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 6]"
+          DTS:CreationName=""
+          DTS:DTSID="{CA855DCC-70DC-4FC0-958E-DA14592DCD15}"
+          DTS:From="Package\Foreach Loop Container\Con Encabezados"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 6"
+          DTS:To="Package\Foreach Loop Container\Ansi Con Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 7]"
+          DTS:CreationName=""
+          DTS:DTSID="{8AE6C00A-3CAE-4BE8-A25E-F5009BE8DFEC}"
+          DTS:From="Package\Foreach Loop Container\Ansi"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 7"
+          DTS:To="Package\Foreach Loop Container\Ansi Con Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 8]"
+          DTS:CreationName=""
+          DTS:DTSID="{3CB12396-09DD-475C-8B56-0E72EB765B56}"
+          DTS:From="Package\Foreach Loop Container\Ansi"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 8"
+          DTS:To="Package\Foreach Loop Container\Ansi Sin Encabezados" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 9]"
+          DTS:CreationName=""
+          DTS:DTSID="{8EC7CDE1-CCC3-48DD-8ADD-0EE6F9BE94F6}"
+          DTS:From="Package\Foreach Loop Container\Sin Encabezados"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 9"
+          DTS:To="Package\Foreach Loop Container\Ansi Sin Encabezados" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{C0827E53-1B29-4A56-8ACB-E1A908606655}"
+          DTS:ObjectName="{C0827E53-1B29-4A56-8ACB-E1A908606655}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::NombreArchivo" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{65FD00C5-E2BE-464B-ADF3-9EE071DD6F11}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{5A95EA8D-3099-4FBB-B504-438E0B3EB81E}"
+      DTS:From="Package\Foreach Loop Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Tarea Flujo de datos" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos"
+          TopLeft="100,5.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Foreach Loop Container\Execute SQL Task"
+          TopLeft="529,48" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="276,26.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="253,42.5"
+              Start="0,0"
+              End="245.5,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="122.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="122.5,0"
+                    Point2="126.5,0"
+                    Point3="126.5,4" />
+                  <mssgle:LineSegment
+                    End="126.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="126.5,38.5"
+                    Point2="126.5,42.5"
+                    Point3="130.5,42.5" />
+                  <mssgle:LineSegment
+                    End="245.5,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Foreach Loop Container\Contador a Incrementar"
+          TopLeft="469,164" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="610.5,90">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-45.5,74"
+              Start="0,0"
+              End="-45.5,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="-4,37" />
+                  <mssgle:LineSegment
+                    End="-41.5,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-41.5,37"
+                    Point2="-45.5,37"
+                    Point3="-45.5,41" />
+                  <mssgle:LineSegment
+                    End="-45.5,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Foreach Loop Container\Con Encabezados"
+          TopLeft="6,257" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Foreach Loop Container\Sin Encabezados"
+          TopLeft="255,302" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Foreach Loop Container\Unicodes"
+          TopLeft="781,300" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\Foreach Loop Container\Ansi"
+          TopLeft="1060,265" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="509.8,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-423.3,51"
+              Start="0,0"
+              End="-423.3,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.2105263157895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.2105263157895"
+                    Point2="0,15.2105263157895"
+                    Point3="-4,15.2105263157895" />
+                  <mssgle:LineSegment
+                    End="-419.3,15.2105263157895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-419.3,15.2105263157895"
+                    Point2="-423.3,15.2105263157895"
+                    Point3="-423.3,19.2105263157895" />
+                  <mssgle:LineSegment
+                    End="-423.3,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-219.65,20.2105263157895,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="546.6,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-213.1,96"
+              Start="0,0"
+              End="-213.1,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.9124423963134" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.9124423963134"
+                    Point2="0,42.9124423963134"
+                    Point3="-4,42.9124423963134" />
+                  <mssgle:LineSegment
+                    End="-209.1,42.9124423963134" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-209.1,42.9124423963134"
+                    Point2="-213.1,42.9124423963134"
+                    Point3="-213.1,46.9124423963134" />
+                  <mssgle:LineSegment
+                    End="-213.1,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-114.55,47.9124423963134,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 4]"
+          TopLeft="583.4,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="258.1,94"
+              Start="0,0"
+              End="258.1,86.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.0184331797235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.0184331797235"
+                    Point2="0,42.0184331797235"
+                    Point3="4,42.0184331797235" />
+                  <mssgle:LineSegment
+                    End="254.1,42.0184331797235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="254.1,42.0184331797235"
+                    Point2="258.1,42.0184331797235"
+                    Point3="258.1,46.0184331797235" />
+                  <mssgle:LineSegment
+                    End="258.1,86.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="121.05,47.0184331797235,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 5]"
+          TopLeft="620.2,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="489.3,59"
+              Start="0,0"
+              End="489.3,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.5964912280702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5964912280702"
+                    Point2="0,17.5964912280702"
+                    Point3="4,17.5964912280702" />
+                  <mssgle:LineSegment
+                    End="485.3,17.5964912280702" />
+                  <mssgle:CubicBezierSegment
+                    Point1="485.3,17.5964912280702"
+                    Point2="489.3,17.5964912280702"
+                    Point3="489.3,21.5964912280702" />
+                  <mssgle:LineSegment
+                    End="489.3,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="236.65,22.5964912280702,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Foreach Loop Container\Ansi Con Encabezados"
+          TopLeft="10,500" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Foreach Loop Container\Ansi Sin Encabezados"
+          TopLeft="276,509" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Foreach Loop Container\Unicode Con Encabezados"
+          TopLeft="586,484" />
+        <NodeLayout
+          Size="198,42"
+          Id="Package\Foreach Loop Container\Unicode Sin Encabezados"
+          TopLeft="946,511" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 6]"
+          TopLeft="61,299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.6666666666667,201"
+              Start="0,0"
+              End="11.6666666666667,193.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,96.6525037936267" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,96.6525037936267"
+                    Point2="0,100.652503793627"
+                    Point3="4,100.652503793627" />
+                  <mssgle:LineSegment
+                    End="7.66666666666666,100.652503793627" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.66666666666666,100.652503793627"
+                    Point2="11.6666666666667,100.652503793627"
+                    Point3="11.6666666666667,104.652503793627" />
+                  <mssgle:LineSegment
+                    End="11.6666666666667,193.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 7]"
+          TopLeft="1094.33333333333,307">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-963,193"
+              Start="0,0"
+              End="-963,185.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,93.3734426578638" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,93.3734426578638"
+                    Point2="0,97.3734426578638"
+                    Point3="-4,97.3734426578638" />
+                  <mssgle:LineSegment
+                    End="-959,97.3734426578638" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-959,97.3734426578638"
+                    Point2="-963,97.3734426578638"
+                    Point3="-963,101.373442657864" />
+                  <mssgle:LineSegment
+                    End="-963,185.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 8]"
+          TopLeft="1124.66666666667,307">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-730,202"
+              Start="0,0"
+              End="-730,194.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,97.890303623898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,97.890303623898"
+                    Point2="0,101.890303623898"
+                    Point3="-4,101.890303623898" />
+                  <mssgle:LineSegment
+                    End="-726,101.890303623898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-726,101.890303623898"
+                    Point2="-730,101.890303623898"
+                    Point3="-730,105.890303623898" />
+                  <mssgle:LineSegment
+                    End="-730,194.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 9]"
+          TopLeft="308.666666666667,344">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.6666666666666,165"
+              Start="0,0"
+              End="28.6666666666666,157.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,78.6311605723371" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,78.6311605723371"
+                    Point2="0,82.6311605723371"
+                    Point3="4,82.6311605723371" />
+                  <mssgle:LineSegment
+                    End="24.6666666666666,82.6311605723371" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.6666666666666,82.6311605723371"
+                    Point2="28.6666666666666,82.6311605723371"
+                    Point3="28.6666666666666,86.6311605723371" />
+                  <mssgle:LineSegment
+                    End="28.6666666666666,157.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 10]"
+          TopLeft="822.666666666667,342">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-103.333333333333,142"
+              Start="0,0"
+              End="-103.333333333333,134.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.4584661989795" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67.4584661989795"
+                    Point2="0,71.4584661989795"
+                    Point3="-4,71.4584661989795" />
+                  <mssgle:LineSegment
+                    End="-99.3333333333334,71.4584661989795" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-99.3333333333334,71.4584661989795"
+                    Point2="-103.333333333333,71.4584661989795"
+                    Point3="-103.333333333333,75.4584661989795" />
+                  <mssgle:LineSegment
+                    End="-103.333333333333,134.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 11]"
+          TopLeft="112,299">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="542.666666666667,185"
+              Start="0,0"
+              End="542.666666666667,177.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.7281340230992" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,88.7281340230992"
+                    Point2="0,92.7281340230992"
+                    Point3="4,92.7281340230992" />
+                  <mssgle:LineSegment
+                    End="538.666666666667,92.7281340230992" />
+                  <mssgle:CubicBezierSegment
+                    Point1="538.666666666667,92.7281340230992"
+                    Point2="542.666666666667,92.7281340230992"
+                    Point3="542.666666666667,96.7281340230992" />
+                  <mssgle:LineSegment
+                    End="542.666666666667,177.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 12]"
+          TopLeft="860.333333333333,342">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="216.333333333333,169"
+              Start="0,0"
+              End="216.333333333333,161.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,81.0290697674419" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,81.0290697674419"
+                    Point2="0,85.0290697674419"
+                    Point3="4,85.0290697674419" />
+                  <mssgle:LineSegment
+                    End="212.333333333333,85.0290697674419" />
+                  <mssgle:CubicBezierSegment
+                    Point1="212.333333333333,85.0290697674419"
+                    Point2="216.333333333333,85.0290697674419"
+                    Point3="216.333333333333,89.0290697674419" />
+                  <mssgle:LineSegment
+                    End="216.333333333333,161.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 13]"
+          TopLeft="358.333333333333,344">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="655,167"
+              Start="0,0"
+              End="655,159.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.7153415523965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,79.7153415523965"
+                    Point2="0,83.7153415523965"
+                    Point3="4,83.7153415523965" />
+                  <mssgle:LineSegment
+                    End="651,83.7153415523965" />
+                  <mssgle:CubicBezierSegment
+                    Point1="651,83.7153415523965"
+                    Point2="655,83.7153415523965"
+                    Point3="655,87.7153415523965" />
+                  <mssgle:LineSegment
+                    End="655,159.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          TopLeft="578,669" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 14]"
+          TopLeft="102,542">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="515.4,127"
+              Start="0,0"
+              End="515.4,119.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,85.0636846095527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,85.0636846095527"
+                    Point2="0,89.0636846095527"
+                    Point3="4,89.0636846095527" />
+                  <mssgle:LineSegment
+                    End="511.4,89.0636846095527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="511.4,89.0636846095527"
+                    Point2="515.4,89.0636846095527"
+                    Point3="515.4,93.0636846095527" />
+                  <mssgle:LineSegment
+                    End="515.4,119.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 15]"
+          TopLeft="366,551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="286.8,118"
+              Start="0,0"
+              End="286.8,110.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.2420800956366" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.2420800956366"
+                    Point2="0,65.2420800956366"
+                    Point3="4,65.2420800956366" />
+                  <mssgle:LineSegment
+                    End="282.8,65.2420800956366" />
+                  <mssgle:CubicBezierSegment
+                    Point1="282.8,65.2420800956366"
+                    Point2="286.8,65.2420800956366"
+                    Point3="286.8,69.2420800956366" />
+                  <mssgle:LineSegment
+                    End="286.8,110.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 16]"
+          TopLeft="687.6,526">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,143"
+              Start="0,0"
+              End="0,135.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,135.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 17]"
+          TopLeft="1045,553">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-321.4,116"
+              Start="0,0"
+              End="-321.4,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,77.3495072024261" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,77.3495072024261"
+                    Point2="0,81.3495072024261"
+                    Point3="-4,81.3495072024261" />
+                  <mssgle:LineSegment
+                    End="-317.4,81.3495072024261" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-317.4,81.3495072024261"
+                    Point2="-321.4,81.3495072024261"
+                    Point3="-321.4,85.3495072024261" />
+                  <mssgle:LineSegment
+                    End="-321.4,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="1322,766"
+          Size="1322,809"
+          Id="Package\Foreach Loop Container"
+          TopLeft="83,3" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="623,872" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="744,812">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-33,60"
+              Start="0,0"
+              End="-33,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-29,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29,30"
+                    Point2="-33,30"
+                    Point3="-33,34" />
+                  <mssgle:LineSegment
+                    End="-33,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
