@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/18/2021 4:13:32 PM"
@@ -11,9 +11,890 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{DA6DFD02-BE6B-4BC8-BBF5-11B731B2BF18}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{2801074B-04B2-4976-A98A-47066A76E117}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:Variables />
-  <DTS:Executables />
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[1 Prueba]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="|||"
+      DTS:DTSID="{6FF14FEE-1758-43DB-BB34-F9DE7FA789F4}"
+      DTS:ObjectName="1 Prueba">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowsToSkip="1"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos\Prueba1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALFKI"
+              DTS:DTSID="{F81BE535-0685-49B1-8B56-0255C503A62B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Alfreds Futterkiste"
+              DTS:DTSID="{2C9D3CCF-82E7-4085-A3ED-A14BCEA57074}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Maria Anders"
+              DTS:DTSID="{6F607077-D9A1-4418-86D8-7DDBA57F01AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sales Representative"
+              DTS:DTSID="{747E64EF-81D9-4485-8C48-26610E0B663F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Obere Str  57"
+              DTS:DTSID="{C13963E7-1E7D-4E4A-A8F4-0A37220223AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Berlin"
+              DTS:DTSID="{E16D3110-14F5-495A-9DA5-4823CFA3A989}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NULL"
+              DTS:DTSID="{47D3B446-AC24-40CA-9E56-A3F45D69FCD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="12209"
+              DTS:DTSID="{48EEE369-59EF-44FF-956A-50E6FC2DE8CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Germany"
+              DTS:DTSID="{AD5406BC-18BE-4261-A0D2-6B6082EAA2EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="030-0074321"
+              DTS:DTSID="{BD87D80E-207B-4539-8658-E11A3207396B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="030-0076545"
+              DTS:DTSID="{2AFAA146-D96F-4C4B-BBEC-E370658EF88F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3646057D-3F38-4A93-9279-F85E484CD782}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="NombreArchivo">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4E2C77A1-A51A-4D35-9573-7CAC34AB917F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Ubicacion">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{718A70D7-C4A7-48CD-A373-55AE0209E9FB}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{A0D6DFA1-5DD2-4348-80FD-A32938409065}"
+        DTS:ObjectName="{A0D6DFA1-5DD2-4348-80FD-A32938409065}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::Ubicacion]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos" />
+            <FEFEProperty
+              FileSpec="*.Txt*" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{06848ECD-6126-49FF-A0D2-22448A6B98C3}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="Encabezado">
+          <DTS:VariableValue
+            DTS:DataType="8"
+            xml:space="preserve"></DTS:VariableValue>
+        </DTS:Variable>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{54C032F8-74DC-432B-8963-2522A6E74F89}"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="Nombre">
+          <DTS:VariableValue
+            DTS:DataType="8"
+            xml:space="preserve"></DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{EF622A9A-6DFC-414F-A0D7-445E9201500B}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{AA759A79-83F2-479C-B492-EE7617CD5F09}"
+              SQLTask:SqlStatementSource="declare @N as varchar(100)=?;&#xA;&#xA;select a.Nombre,a.Encabezado from&#xA;Archivos as a&#xA;where a.Nombre=@N;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="0"
+                SQLTask:DtsVariableName="User::Nombre" />
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="1"
+                SQLTask:DtsVariableName="User::Encabezado" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::NombreArchivo"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{995D7557-B894-49E0-9540-C85E65EE92EA}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{672e3dbf-b2c6-46d3-a3fb-9d3ab853558c}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos 1"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos 2"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{4A83B10C-A4B5-4575-B4F7-CF24BD1B3B29}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos 2"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+                  description="Origen de archivo plano"
+                  localeId="1033"
+                  name="Origen de archivo plano"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica si las columnas de longitud cero se tratan como NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[1 Prueba]"
+                      connectionManagerRefId="Package.ConnectionManagers[1 Prueba]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                      name="Salida de origen de archivo plano">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ALFKI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ALFKI]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ALFKI]"
+                          name="ALFKI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Alfreds Futterkiste]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Alfreds Futterkiste]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Alfreds Futterkiste]"
+                          name="Alfreds Futterkiste"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Maria Anders]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Maria Anders]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Maria Anders]"
+                          name="Maria Anders"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Sales Representative]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Sales Representative]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Sales Representative]"
+                          name="Sales Representative"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Obere Str  57]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Obere Str  57]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Obere Str  57]"
+                          name="Obere Str  57"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Berlin]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Berlin]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Berlin]"
+                          name="Berlin"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NULL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NULL]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[NULL]"
+                          name="NULL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[12209]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[12209]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[12209]"
+                          name="12209"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Germany]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Germany]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Germany]"
+                          name="Germany"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[030-0074321]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[030-0074321]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[030-0074321]"
+                          name="030-0074321"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[030-0076545]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[030-0076545]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[030-0076545]"
+                          name="030-0076545"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ALFKI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ALFKI" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Alfreds Futterkiste]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Alfreds Futterkiste" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Maria Anders]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Maria Anders" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Sales Representative]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Sales Representative" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Obere Str  57]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Obere Str  57" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Berlin]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Berlin" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[NULL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NULL" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[12209]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="12209" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Germany]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Germany" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[030-0074321]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="030-0074321" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[030-0076545]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="030-0076545" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                      isErrorOut="true"
+                      name="Salida de error de origen de archivo plano">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Columna de salida de error de origen de archivo plano"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          name="Columna de salida de error de origen de archivo plano" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos 3"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{AC1042CA-5535-47F9-8CC7-9CF4DAD75F50}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos 3"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{00058D74-A2FE-49F6-B389-92C646934DDA}"
+          DTS:From="Package\Foreach Loop Container\Tarea Flujo de datos"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Foreach Loop Container\Execute SQL Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{7E344C30-2A64-4D7F-819F-A2A0AC8C0093}"
+          DTS:From="Package\Foreach Loop Container\Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{1C8E591C-00A6-4989-AB0F-1CD923DAFB85}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::Encabezado]==&quot;True&quot;"
+          DTS:From="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 2" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 3]"
+          DTS:CreationName=""
+          DTS:DTSID="{DEBA7316-E0A3-4D57-B06D-66C440BBA87C}"
+          DTS:EvalOp="1"
+          DTS:Expression="@[User::Encabezado]==&quot;False&quot;"
+          DTS:From="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 3"
+          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 3" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{F1FC2C16-1BFC-497D-97C3-92BEB6727AE4}"
+          DTS:ObjectName="{F1FC2C16-1BFC-497D-97C3-92BEB6727AE4}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::NombreArchivo" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos"
+          TopLeft="265,11" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Foreach Loop Container\Execute SQL Task"
+          TopLeft="271,91" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="352.75,53">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          TopLeft="256,172" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="350.5,133">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 2"
+          TopLeft="32,268" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 3"
+          TopLeft="506,263" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="348.5,214">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-224,54"
+              Start="0,0"
+              End="-224,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23"
+                    Point2="0,27"
+                    Point3="-4,27" />
+                  <mssgle:LineSegment
+                    End="-220,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-220,27"
+                    Point2="-224,27"
+                    Point3="-224,31" />
+                  <mssgle:LineSegment
+                    End="-224,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-120,32,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="378,214">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="220.5,49"
+              Start="0,0"
+              End="220.5,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.8520900321543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.8520900321543"
+                    Point2="0,19.8520900321543"
+                    Point3="4,19.8520900321543" />
+                  <mssgle:LineSegment
+                    End="216.5,19.8520900321543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="216.5,19.8520900321543"
+                    Point2="220.5,19.8520900321543"
+                    Point3="220.5,23.8520900321543" />
+                  <mssgle:LineSegment
+                    End="220.5,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="102.25,24.8520900321543,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="740,596"
+          Size="740,639"
+          Id="Package\Foreach Loop Container"
+          TopLeft="49,34" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos 2">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano"
+          TopLeft="634,143" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
