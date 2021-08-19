@@ -1,0 +1,1208 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/19/2021 4:35:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TAKUDESKTOP"
+  DTS:CreatorName="TAKUDESKTOP\esteb"
+  DTS:DTSID="{7CBF7577-2168-47F0-B600-AAE4EE5F5793}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{C9536D42-C541-4609-8C3B-4E68CEDA847E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[111]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A3558631-944C-4639-8CB5-77260C0EC786}"
+      DTS:ObjectName="111">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos\Prueba1.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{C5BD4BC1-F345-4297-8CBA-4963CE42DB07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyName"
+              DTS:DTSID="{C6068BDF-C46B-4970-8301-7C736C17F672}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ContactName"
+              DTS:DTSID="{9D6DC45D-0891-4D9A-8441-FA05836A655F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ContactTitle"
+              DTS:DTSID="{D41D5D3F-EFFE-4183-8D5D-9AA7005638B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address"
+              DTS:DTSID="{648B7637-0888-48C9-BA45-EF525C6E495E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{093C699F-E635-454D-8D7F-84F48AC38CB1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{89A3F2A4-C2B4-4B48-BF1D-5858668EF4D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostalCode"
+              DTS:DTSID="{A2A4AE05-0624-4041-A261-C917298A3470}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{FFCDBB73-BA34-4920-A8F5-6B758C27C7CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{2DAB19A7-3157-44B0-9C6F-A82EFA1CE913}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fax"
+              DTS:DTSID="{919E1242-FBF9-47FF-94DD-2700DF2FB308}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{22C49989-9D89-442A-A84E-6CD785F7536F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="archivo">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{603C9464-B855-4579-8201-69685353FAA0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Ubicacion">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{A1095B16-0553-4AA8-84E4-FD3332608B2E}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{DE12B1C2-58A9-4DCF-BCE0-0660204621FE}"
+        DTS:ObjectName="{DE12B1C2-58A9-4DCF-BCE0-0660204621FE}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::Ubicacion]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos" />
+            <FEFEProperty
+              FileSpec="*.Txt*" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Tarea Flujo de datos"
+          DTS:DTSID="{D154344A-925A-41A6-BF6F-B59BED0E363E}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Flujo de datos"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                  name="Columna derivada"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+                      description="Entrada en la transformación Columna derivada"
+                      name="Entrada de columna derivada">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada].Columns[CustomerID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CustomerID"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]"
+                      description="Salida predeterminada de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      name="Salida de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[ReverseCustomerID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Cálculo"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[ReverseCustomerID]"
+                          name="ReverseCustomerID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión de columna derivada"
+                              name="Expression">[REVERSE]([UPPER](#{Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]}))</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión descriptiva de columna derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">REVERSE(UPPER(CustomerID))</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada]"
+                      description="Salida de error de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                  name="Columna derivada 1"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]"
+                      description="Entrada en la transformación Columna derivada"
+                      name="Entrada de columna derivada">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada].Columns[City]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="City"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada].Columns[Region]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Region"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada]"
+                      description="Salida predeterminada de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      name="Salida de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[CityRegion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Cálculo"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[CityRegion]"
+                          name="CityRegion"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión de columna derivada"
+                              name="Expression">#{Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]} + #{Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión descriptiva de columna derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">City + Region</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada]"
+                      description="Salida de error de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1"
+                  componentClassID="Microsoft.SQLServerDestination"
+                  contactInfo="Destino de SQL Server;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;5"
+                  description="Destino de SQL Server"
+                  name="Destino de SQL Server 1"
+                  version="5">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.String"
+                      description="El nombre del objeto de base de datos en el que copiar datos."
+                      expressionType="Notify"
+                      name="BulkInsertTableName">[Destino de SQL Server 1]</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica que todas las restricciones del objeto de destino se comprueben durante la operación de copia de datos. Corresponde a la opción CHECK_CONSTRAINTS de inserción masiva."
+                      name="BulkInsertCheckConstraints">true</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el número de la primera fila para copiar. Corresponde a la opción FIRSTROW de inserción masiva."
+                      expressionType="Notify"
+                      name="BulkInsertFirstRow">-1</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica que todos los desencadenadores de inserción definidos en el objeto de destino se van a ejecutar durante la copia de datos. Corresponde a la opción FIRE_TRIGGERS de inserción masiva."
+                      name="BulkInsertFireTriggers">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Corresponde a la opción KEEPIDENTITY de inserción masiva."
+                      name="BulkInsertKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si las columnas que contienen NULL tendrán NULL copiado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                      name="BulkInsertKeepNulls">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el número de la última fila para copiar. Corresponde a la opción LASTROW de inserción masiva."
+                      expressionType="Notify"
+                      name="BulkInsertLastRow">-1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el número máximo de errores de sintaxis y de compilación que pueden producirse sin que se cancele la operación de copia. Cada fila que no se puede copiar se omite y se cuenta como un error. Corresponde a la opción MAXERRORS de inserción masiva."
+                      name="BulkInsertMaxErrors">-1</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica cómo se ordenan los datos que se van a copiar. Corresponde a la opción ORDER de inserción masiva."
+                      expressionType="Notify"
+                      name="BulkInsertOrder"></property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica que se adquiere un bloqueo de nivel de tabla durante toda la operación de copia de datos. Corresponde a la opción TABLOCK de inserción masiva."
+                      name="BulkInsertTablock">true</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica en segundos el tiempo de espera del adaptador de destino de SQL antes de desactivarse si no hay ningún dato disponible para la inserción. Un valor 0 de tiempo de espera indica que no se agotará el tiempo de espera del adaptador de destino de SQL."
+                      expressionType="Notify"
+                      name="Timeout">30</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos."
+                      name="MaxInsertCommitSize">0</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Connections[OleDbConnection]"
+                      connectionManagerID="{AA759A79-83F2-479C-B492-EE7617CD5F09}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[(local).Proyecto2]"
+                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server]"
+                      hasSideEffects="true"
+                      name="Entrada de destino de SQL Server">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[CustomerID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CustomerID"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CustomerID]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[CompanyName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CompanyName"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CompanyName]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CompanyName]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[ContactName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ContactName"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactName]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactName]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[ContactTitle]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ContactTitle"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactTitle]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Address]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Address"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Address]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Address]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[City]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="City"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[City]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Region]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Region"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Region]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[PostalCode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PostalCode"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[PostalCode]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[PostalCode]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Country]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Country]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Phone]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Phone"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Phone]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Phone]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Fax]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Fax"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Fax]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Fax]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[ReverseCustomerID]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="ReverseCustomerID"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ReverseCustomerID]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[ReverseCustomerID]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[CityRegion]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="CityRegion"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CityRegion]"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[CityRegion]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CustomerID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CustomerID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CompanyName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CompanyName" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ContactName" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactTitle]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ContactTitle" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Address]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Address" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[City]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="City" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Region" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[PostalCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PostalCode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Phone]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Fax]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Fax" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ReverseCustomerID]"
+                          dataType="wstr"
+                          length="50"
+                          name="ReverseCustomerID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CityRegion]"
+                          dataType="wstr"
+                          length="100"
+                          name="CityRegion" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+                  description="Origen de archivo plano"
+                  localeId="1033"
+                  name="Origen de archivo plano 1"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica si las columnas de longitud cero se tratan como NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[111]"
+                      connectionManagerRefId="Package.ConnectionManagers[111]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano]"
+                      name="Salida de origen de archivo plano">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CustomerID]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]"
+                          name="CustomerID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CompanyName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CompanyName]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CompanyName]"
+                          name="CompanyName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactName]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactName]"
+                          name="ContactName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactTitle]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]"
+                          name="ContactTitle"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Address]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Address]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Address]"
+                          name="Address"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[City]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]"
+                          name="City"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Region]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]"
+                          name="Region"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[PostalCode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[PostalCode]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[PostalCode]"
+                          name="PostalCode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Phone]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Phone]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Phone]"
+                          name="Phone"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Fax]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Fax]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Fax]"
+                          name="Fax"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CustomerID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CustomerID" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CompanyName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CompanyName" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ContactName" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactTitle]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ContactTitle" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Address]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Address" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[City]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="City" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Region" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[PostalCode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PostalCode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Phone]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Phone" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Fax]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Fax" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano]"
+                      isErrorOut="true"
+                      name="Salida de error de origen de archivo plano">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Columna de salida de error de origen de archivo plano"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          name="Columna de salida de error de origen de archivo plano" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+                  endId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]"
+                  name="Salida de columna derivada"
+                  startId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]" />
+                <path
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
+                  endId="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server]"
+                  name="Salida de columna derivada"
+                  startId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada]" />
+                <path
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+                  endId="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+                  name="Salida de origen de archivo plano"
+                  startId="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{3A0C59A5-0A0A-4967-B6D4-72640D08F031}"
+          DTS:ObjectName="{3A0C59A5-0A0A-4967-B6D4-72640D08F031}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::archivo" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos"
+          TopLeft="147,49" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="475,314"
+          Size="475,357"
+          Id="Package\Foreach Loop Container"
+          TopLeft="265,108" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Origen de archivo plano 1"
+          TopLeft="447,43" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada"
+          TopLeft="468,215" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+          TopLeft="548.5,85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,130"
+              Start="0,0"
+              End="0,122.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,122.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Columna derivada 1"
+          TopLeft="444.5,333.5" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="550,257">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19,76.5"
+              Start="0,0"
+              End="-19,69">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.25"
+                    Point2="0,38.25"
+                    Point3="-4,38.25" />
+                  <mssgle:LineSegment
+                    End="-15,38.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15,38.25"
+                    Point2="-19,38.25"
+                    Point3="-19,42.25" />
+                  <mssgle:LineSegment
+                    End="-19,69" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="194,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1"
+          TopLeft="410,559" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
+          TopLeft="531,375.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-24,183.5"
+              Start="0,0"
+              End="-24,176">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,87.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,87.75"
+                    Point2="0,91.75"
+                    Point3="-4,91.75" />
+                  <mssgle:LineSegment
+                    End="-20,91.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-20,91.75"
+                    Point2="-24,91.75"
+                    Point3="-24,95.75" />
+                  <mssgle:LineSegment
+                    End="-24,176" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos\Destino de SQL Server 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

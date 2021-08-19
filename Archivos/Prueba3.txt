@@ -1,0 +1,5 @@
+FAMIA,Familia Arquibaldo,Aria Cruz,Marketing Assistant,Rua Orós, 92,Sao Paulo,SP,05442-030,Brazil,(11) 555-9857,NULL|
+FISSA,FISSA Fabrica Inter. Salchichas S.A.,Diego Roel,Accounting Manager,C/ Moralzarzal, 86,Madrid,NULL,28034,Spain,(91) 555 94 44,(91) 555 55 93|
+FOLIG,Folies gourmandes,Martine Rancé,Assistant Sales Agent,184, chaussée de Tournai,Lille,NULL,59000,France,20.16.10.16,20.16.10.17|
+FOLKO,Folk och fä HB,Maria Larsson,Owner,Åkergatan 24,Bräcke,NULL,S-844 67,Sweden,0695-34 67 21,NULL|
+FRANK,Frankenversand,Peter Franken,Marketing Manager,Berliner Platz 43,München,NULL,80805,Germany,089-0877310,089-0877451|

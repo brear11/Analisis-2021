@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{2801074B-04B2-4976-A98A-47066A76E117}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{DA4FBE3E-0A15-4982-B6CA-4772C1919E75}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -137,8 +137,157 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D4A0EBCF-A63E-4685-BFCB-42435ED9AE8E}"
+      DTS:ObjectName="2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos\Prueba2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{EE7B9B40-1D02-4AC6-A302-17464F141A2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 1"
+              DTS:DTSID="{1A276EA6-FAA9-469B-AA5F-CCDC08B4AA9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{BA7D49EF-41C3-4274-9976-7AC005107162}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{CFCB2BB2-87A2-4E4F-81FC-CFF425B90AD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{07353F4E-6B77-49CA-89B0-7A7D684C7F54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{C5E40F7E-3957-4053-B0C6-333CED1BE281}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{D1579D78-5869-4C4B-8038-F07CCF345779}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{84E8FD60-7F94-418B-965B-73B6A5655942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{D7FCC28D-E6C1-4880-8014-EA136A112D07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{898BB5E5-BB2B-4FEE-B3D8-6C6D987E84B8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{A1D8B0D6-B300-420A-BE7B-7F05874EE578}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{099D5D77-76D1-438F-9A36-9BA448CE238F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CantidadFilas">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{98E04AF5-3AEA-43F2-B7FF-66E2FD3475A3}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Final">
+      <DTS:VariableValue
+        DTS:DataType="7">8/19/2021 4:26:30 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{03398688-17ED-4B05-A0D1-B11D4D7AE839}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Inicio">
+      <DTS:VariableValue
+        DTS:DataType="7">8/19/2021 4:26:30 PM</DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{3646057D-3F38-4A93-9279-F85E484CD782}"
@@ -674,7 +823,383 @@
           <DTS:Variables />
           <DTS:ObjectData>
             <pipeline
-              version="1" />
+              version="1">
+              <components>
+                <component
+                  refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+                  description="Origen de archivo plano"
+                  localeId="1033"
+                  name="Origen de archivo plano"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Especifica si las columnas de longitud cero se tratan como NULL."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[2]"
+                      connectionManagerRefId="Package.ConnectionManagers[2]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                      name="Salida de origen de archivo plano">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 0]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 0]"
+                          name="Column 0"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 1]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 1]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 1]"
+                          name="Column 1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 2]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 2]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 2]"
+                          name="Column 2"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 3]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 3]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 3]"
+                          name="Column 3"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 4]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 4]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 4]"
+                          name="Column 4"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 5]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 5]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 5]"
+                          name="Column 5"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 6]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 6]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 6]"
+                          name="Column 6"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 7]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 7]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 7]"
+                          name="Column 7"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 8]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 8]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 8]"
+                          name="Column 8"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 9]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 9]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 9]"
+                          name="Column 9"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 10]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 10]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Column 10]"
+                          name="Column 10"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los datos están en formato binario."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 0]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 0" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 1" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 2]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 2" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 3" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 4]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 4" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 5]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 5" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 6]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 6" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 7]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 7" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 8]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 8" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 9]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 9" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Column 10]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Column 10" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                      isErrorOut="true"
+                      name="Salida de error de origen de archivo plano">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Columna de salida de error de origen de archivo plano"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          name="Columna de salida de error de origen de archivo plano" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+            </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -739,13 +1264,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="163,42"
+          Id="Package\Foreach Loop Container\Execute SQL Task"
+          TopLeft="271,91" />
+        <NodeLayout
           Size="176,42"
           Id="Package\Foreach Loop Container\Tarea Flujo de datos"
           TopLeft="265,11" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Foreach Loop Container\Execute SQL Task"
-          TopLeft="271,91" />
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          TopLeft="256,172" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 2"
+          TopLeft="31.5,291" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 3"
+          TopLeft="518,302" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
           TopLeft="352.75,53">
@@ -768,10 +1305,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1"
-          TopLeft="256,172" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
           TopLeft="350.5,133">
@@ -794,47 +1327,39 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 2"
-          TopLeft="32,268" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 3"
-          TopLeft="506,263" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="348.5,214">
+          TopLeft="319,214">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-224,54"
+              EndConnector="-195,77"
               Start="0,0"
-              End="-224,46.5">
+              End="-195,69.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23" />
+                    End="0,27.1961414790997" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,23"
-                    Point2="0,27"
-                    Point3="-4,27" />
+                    Point1="0,27.1961414790997"
+                    Point2="0,31.1961414790997"
+                    Point3="-4,31.1961414790997" />
                   <mssgle:LineSegment
-                    End="-220,27" />
+                    End="-191,31.1961414790997" />
                   <mssgle:CubicBezierSegment
-                    Point1="-220,27"
-                    Point2="-224,27"
-                    Point3="-224,31" />
+                    Point1="-191,31.1961414790997"
+                    Point2="-195,31.1961414790997"
+                    Point3="-195,35.1961414790997" />
                   <mssgle:LineSegment
-                    End="-224,46.5" />
+                    End="-195,69.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-120,32,16,16"
+              BoundingBox="-105.5,36.1961414790997,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -844,33 +1369,33 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="220.5,49"
+              EndConnector="232.5,88"
               Start="0,0"
-              End="220.5,41.5">
+              End="232.5,80.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.8520900321543" />
+                    End="0,31.6527331189711" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.8520900321543"
-                    Point2="0,19.8520900321543"
-                    Point3="4,19.8520900321543" />
+                    Point1="0,31.6527331189711"
+                    Point2="0,35.6527331189711"
+                    Point3="4,35.6527331189711" />
                   <mssgle:LineSegment
-                    End="216.5,19.8520900321543" />
+                    End="228.5,35.6527331189711" />
                   <mssgle:CubicBezierSegment
-                    Point1="216.5,19.8520900321543"
-                    Point2="220.5,19.8520900321543"
-                    Point3="220.5,23.8520900321543" />
+                    Point1="228.5,35.6527331189711"
+                    Point2="232.5,35.6527331189711"
+                    Point3="232.5,39.6527331189711" />
                   <mssgle:LineSegment
-                    End="220.5,41.5" />
+                    End="232.5,80.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="102.25,24.8520900321543,16,16"
+              BoundingBox="108.25,40.6527331189711,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -892,7 +1417,19 @@
         <NodeLayout
           Size="191,42"
           Id="Package\Foreach Loop Container\Tarea Flujo de datos 2\Origen de archivo plano"
-          TopLeft="634,143" />
+          TopLeft="514,141" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos 3">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Foreach Loop Container\Tarea Flujo de datos 3\Origen de archivo plano"
+          TopLeft="545,220" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
