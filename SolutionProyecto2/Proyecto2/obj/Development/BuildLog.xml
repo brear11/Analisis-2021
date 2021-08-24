@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Proyecto2</Name>
-    <LastWriteTime>2021-08-19T22:52:25.0637066Z</LastWriteTime>
+    <LastWriteTime>2021-08-23T21:13:37.8257063Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Prueba2.dtsx</Name>
-      <LastWriteTime>2021-08-22T20:51:50.9635752Z</LastWriteTime>
+      <LastWriteTime>2021-08-23T22:24:26.1974953Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
