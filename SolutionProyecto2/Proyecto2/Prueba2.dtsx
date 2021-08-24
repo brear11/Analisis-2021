@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{889D8081-97EB-48A4-9510-532168012AAC}">
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{88595531-0CFE-4306-B6F1-CA6F747CA245}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{A3558631-944C-4639-8CB5-77260C0EC786}"
       DTS:ObjectName="111">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::VarFilePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -29,8 +31,7 @@
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos\Prueba1.txt">
+          DTS:CodePage="1252">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +40,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerID"
-              DTS:DTSID="{C5BD4BC1-F345-4297-8CBA-4963CE42DB07}"
+              DTS:DTSID="{0B7C805D-FA62-480A-A91D-F07B7C2BBCDC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CompanyName"
-              DTS:DTSID="{C6068BDF-C46B-4970-8301-7C736C17F672}"
+              DTS:DTSID="{6CD5FA0A-7EE2-4C37-809F-A8B527D16316}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ContactName"
-              DTS:DTSID="{9D6DC45D-0891-4D9A-8441-FA05836A655F}"
+              DTS:DTSID="{00F0286E-2D8D-4B14-8BF6-00D93E1C576C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +67,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ContactTitle"
-              DTS:DTSID="{D41D5D3F-EFFE-4183-8D5D-9AA7005638B3}"
+              DTS:DTSID="{57142858-8C51-4A9C-BF63-8F6E1383B7C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +76,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Address"
-              DTS:DTSID="{648B7637-0888-48C9-BA45-EF525C6E495E}"
+              DTS:DTSID="{03567DEE-E7A5-4AFF-9258-E84310823D58}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="City"
-              DTS:DTSID="{093C699F-E635-454D-8D7F-84F48AC38CB1}"
+              DTS:DTSID="{4B97D2E7-4026-4205-B11E-805DFF5B5938}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Region"
-              DTS:DTSID="{89A3F2A4-C2B4-4B48-BF1D-5858668EF4D8}"
+              DTS:DTSID="{31E5EAF8-24E7-4D40-9055-87C1BD90C2B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PostalCode"
-              DTS:DTSID="{A2A4AE05-0624-4041-A261-C917298A3470}"
+              DTS:DTSID="{411DADD6-A193-431A-B6D6-A3B0531B474E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +112,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{FFCDBB73-BA34-4920-A8F5-6B758C27C7CE}"
+              DTS:DTSID="{A82EEB64-5917-4205-A74B-D9BE4740FC13}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +121,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Phone"
-              DTS:DTSID="{2DAB19A7-3157-44B0-9C6F-A82EFA1CE913}"
+              DTS:DTSID="{4CC4A0D5-174E-4F45-9586-1CCCA6ABEB4B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +130,127 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fax"
-              DTS:DTSID="{919E1242-FBF9-47FF-94DD-2700DF2FB308}"
+              DTS:DTSID="{3232613B-67B5-426E-8FC2-A011E33977F7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConexionDinamica]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EFC6A2DA-B549-47EC-AC50-6DDA5BD700B3}"
+      DTS:ObjectName="ConexionDinamica">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FullFilePath]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x003B_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{1D85FAA8-EF25-48ED-A17F-A0460572DEEF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyName"
+              DTS:DTSID="{435FF32B-3B6F-43D8-B84C-2BFFB0606908}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ContactName"
+              DTS:DTSID="{EDF72E0D-8A6F-4959-85AB-73F5B73A338C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ContactTitle"
+              DTS:DTSID="{DD8247D2-8D04-455B-A73D-891D45EE5D07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Address"
+              DTS:DTSID="{658566FD-4B37-48EB-B6C0-31D4C5737D7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{F216859C-495D-48D1-816D-748CBB00862D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{8579A130-9E33-4E8A-8E3C-C495293908E7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PostalCode"
+              DTS:DTSID="{3DD76A95-615E-4684-A4D0-7FB407DA92CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{93D70F16-2538-41BD-A3B6-11ADDFFDB8FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Phone"
+              DTS:DTSID="{1A37A670-7738-4308-B1C3-9FE81F6E2121}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fax"
+              DTS:DTSID="{D3B78050-4360-40ED-9C88-DFF60231D26D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -157,6 +278,15 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{10EA5FB3-C592-4615-9986-A62244925D19}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{C88F5128-1114-4CA8-8D33-7806A63124A6}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::Final]= GETDATE()"
@@ -164,7 +294,17 @@
       DTS:Namespace="User"
       DTS:ObjectName="Final">
       <DTS:VariableValue
-        DTS:DataType="7">8/24/2021 12:28:06 PM</DTS:VariableValue>
+        DTS:DataType="7">8/24/2021 2:17:41 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{847D0326-6751-45B3-85F4-9D6AC95D9C30}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FullFilePath">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -175,7 +315,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Inicio">
       <DTS:VariableValue
-        DTS:DataType="7">8/24/2021 12:28:06 PM</DTS:VariableValue>
+        DTS:DataType="7">8/24/2021 2:17:41 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -211,12 +351,13 @@
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{F1EC9B0C-3C69-433D-A2A2-2FA7475995A3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -238,27 +379,27 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach Loop Container"
+      DTS:refId="Package\Foreach Loop Container 1"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{A1095B16-0553-4AA8-84E4-FD3332608B2E}"
+      DTS:DTSID="{B89E2310-959C-45DA-8277-878CFA15BD40}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Loop Container">
+      DTS:ObjectName="Foreach Loop Container 1">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{DE12B1C2-58A9-4DCF-BCE0-0660204621FE}"
-        DTS:ObjectName="{DE12B1C2-58A9-4DCF-BCE0-0660204621FE}">
+        DTS:DTSID="{ED66C4C7-D531-4756-892B-F8A1FDC0D208}"
+        DTS:ObjectName="{ED66C4C7-D531-4756-892B-F8A1FDC0D208}">
         <DTS:PropertyExpression
-          DTS:Name="Directory">@[User::Ubicacion]</DTS:PropertyExpression>
+          DTS:Name="Directory">@[User::FilePath]</DTS:PropertyExpression>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
               Folder="C:\Users\esteb\source\repos\Analisis-2021\Proyecto2 SSIS\Archivos" />
             <FEFEProperty
-              FileSpec="*.Txt*" />
+              FileSpec="*.Txt" />
             <FEFEProperty
-              FileNameRetrievalType="1" />
+              FileNameRetrievalType="0" />
             <FEFEProperty
               Recurse="0" />
           </ForEachFileEnumeratorProperties>
@@ -267,13 +408,13 @@
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\Tarea Flujo de datos 1"
+          DTS:refId="Package\Foreach Loop Container 1\Tarea Flujo de datos"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{EC1D79DC-372D-4BC1-B4BB-7DBE0ABAC988}"
+          DTS:DTSID="{C4E6DEE5-5840-4A6C-B2D8-7453B95AA663}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Tarea Flujo de datos 1"
+          DTS:ObjectName="Tarea Flujo de datos"
           DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
           <DTS:ObjectData>
@@ -281,514 +422,11 @@
               version="1">
               <components>
                 <component
-                  refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB"
-                  componentClassID="Microsoft.OLEDBCommand"
-                  contactInfo="Comando de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
-                  description="Ejecuta una instrucción SQL para cada fila de un flujo de datos. Por ejemplo, se usa para llamar al procedimiento almacenado de configuración de nuevo empleado para cada fila de la tabla de nuevos empleados. Nota: la ejecución de una instrucción SQL para cada fila de un flujo de datos de gran tamaño puede tardar mucho tiempo."
-                  name="Comando de OLE DB"
-                  usesDispositions="true"
-                  version="2">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Comando SQL para ejecutar."
-                      expressionType="Notify"
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Declare @F as Date=?
-Declare @N as varchar(100)=?
-
-Update Archivos
-set Inicio=@F
-WHERE Nombre=@N;</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
-                      name="DefaultCodePage">1252</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Connections[OleDbConnection]"
-                      connectionManagerID="{AA759A79-83F2-479C-B492-EE7617CD5F09}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[(local).Proyecto2]"
-                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]"
-                      errorOrTruncationOperation="Ejecución de comando"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="Entrada de comando de OLE DB">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].Columns[Final]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="Final"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Final]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].Columns[Nombre]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Nombre"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_1]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Nombre]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                          dataType="dbDate"
-                          name="Param_0">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
-                              name="DBParamInfoFlags">65</property>
-                          </properties>
-                        </externalMetadataColumn>
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_1]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="Param_1">
-                          <properties>
-                            <property
-                              dataType="System.Int32"
-                              description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
-                              name="DBParamInfoFlags">65</property>
-                          </properties>
-                        </externalMetadataColumn>
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de comando de OLE DB]"
-                      exclusionGroup="1"
-                      name="Salida de comando de OLE DB"
-                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]">
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Salida de error de comando de OLE DB"
-                      synchronousInputId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB"
-                  componentClassID="Microsoft.OLEDBSource"
-                  contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
-                  description="Origen de OLE DB"
-                  name="Origen de OLE DB"
-                  usesDispositions="true"
-                  version="7">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                      name="OpenRowset">[dbo].[Archivos]</property>
-                    <property
-                      dataType="System.String"
-                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="Comando SQL para ejecutar."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.String"
-                      description="Variable que contiene el comando SQL para ejecutar."
-                      name="SqlCommandVariable"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
-                      name="AccessMode"
-                      typeConverter="AccessMode">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Asignaciones entre los parámetros del comando SQL y las variables."
-                      name="ParameterMapping"></property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Connections[OleDbConnection]"
-                      connectionManagerID="{AA759A79-83F2-479C-B492-EE7617CD5F09}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[(local).Proyecto2]"
-                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
-                      name="OleDbConnection" />
-                  </connections>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
-                      name="Salida de origen de OLE DB">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Nombre]"
-                          codePage="1252"
-                          dataType="str"
-                          errorOrTruncationOperation="Conversión"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Nombre]"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Nombre]"
-                          name="Nombre"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Encabezado]"
-                          dataType="bool"
-                          errorOrTruncationOperation="Conversión"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Encabezado]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Encabezado]"
-                          name="Encabezado"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CantidadRegistros]"
-                          dataType="i4"
-                          errorOrTruncationOperation="Conversión"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CantidadRegistros]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CantidadRegistros]"
-                          name="CantidadRegistros"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Inicio]"
-                          dataType="dbTimeStamp"
-                          errorOrTruncationOperation="Conversión"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Inicio]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Inicio]"
-                          name="Inicio"
-                          truncationRowDisposition="FailComponent" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Final]"
-                          dataType="dbTimeStamp"
-                          errorOrTruncationOperation="Conversión"
-                          errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Final]"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Final]"
-                          name="Final"
-                          truncationRowDisposition="FailComponent" />
-                      </outputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Nombre]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          name="Nombre" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Encabezado]"
-                          dataType="bool"
-                          name="Encabezado" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CantidadRegistros]"
-                          dataType="i4"
-                          name="CantidadRegistros" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Inicio]"
-                          dataType="dbTimeStamp"
-                          name="Inicio" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Final]"
-                          dataType="dbTimeStamp"
-                          name="Final" />
-                      </externalMetadataColumns>
-                    </output>
-                    <output
-                      refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
-                      isErrorOut="true"
-                      name="Salida de error de origen de OLE DB">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Nombre]"
-                          codePage="1252"
-                          dataType="str"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Nombre]"
-                          name="Nombre" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Encabezado]"
-                          dataType="bool"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Encabezado]"
-                          name="Encabezado" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CantidadRegistros]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CantidadRegistros]"
-                          name="CantidadRegistros" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Inicio]"
-                          dataType="dbTimeStamp"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Inicio]"
-                          name="Inicio" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Final]"
-                          dataType="dbTimeStamp"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Final]"
-                          name="Final" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-              </components>
-              <paths>
-                <path
-                  refId="Package\Foreach Loop Container\Tarea Flujo de datos 1.Paths[Salida de origen de OLE DB]"
-                  endId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]"
-                  name="Salida de origen de OLE DB"
-                  startId="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
-              </paths>
-            </pipeline>
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\Transformacion"
-          DTS:CreationName="Microsoft.Pipeline"
-          DTS:Description="Tarea Flujo de datos"
-          DTS:DTSID="{D154344A-925A-41A6-BF6F-B59BED0E363E}"
-          DTS:ExecutableType="Microsoft.Pipeline"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Transformacion"
-          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <pipeline
-              version="1">
-              <components>
-                <component
-                  refId="Package\Foreach Loop Container\Transformacion\Columna derivada"
-                  componentClassID="Microsoft.DerivedColumn"
-                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
-                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
-                  name="Columna derivada"
-                  usesDispositions="true">
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Inputs[Entrada de columna derivada]"
-                      description="Entrada en la transformación Columna derivada"
-                      name="Entrada de columna derivada">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Inputs[Entrada de columna derivada].Columns[CustomerID]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="CustomerID"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]" />
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de columna derivada]"
-                      description="Salida predeterminada de la transformación Columna derivada"
-                      exclusionGroup="1"
-                      name="Salida de columna derivada"
-                      synchronousInputId="Package\Foreach Loop Container\Transformacion\Columna derivada.Inputs[Entrada de columna derivada]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de columna derivada].Columns[ReverseCustomerID]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Cálculo"
-                          errorRowDisposition="FailComponent"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de columna derivada].Columns[ReverseCustomerID]"
-                          name="ReverseCustomerID"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Expresión de columna derivada"
-                              name="Expression">[REVERSE]([UPPER](#{Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]}))</property>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Expresión descriptiva de columna derivada"
-                              expressionType="Notify"
-                              name="FriendlyExpression">REVERSE(UPPER(CustomerID))</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de error de columna derivada]"
-                      description="Salida de error de la transformación Columna derivada"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Salida de error de columna derivada"
-                      synchronousInputId="Package\Foreach Loop Container\Transformacion\Columna derivada.Inputs[Entrada de columna derivada]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1"
-                  componentClassID="Microsoft.DerivedColumn"
-                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
-                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
-                  name="Columna derivada 1"
-                  usesDispositions="true">
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Inputs[Entrada de columna derivada]"
-                      description="Entrada en la transformación Columna derivada"
-                      name="Entrada de columna derivada">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Inputs[Entrada de columna derivada].Columns[City]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="City"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]" />
-                        <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Inputs[Entrada de columna derivada].Columns[Region]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
-                          cachedName="Region"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]" />
-                      </inputColumns>
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de columna derivada]"
-                      description="Salida predeterminada de la transformación Columna derivada"
-                      exclusionGroup="1"
-                      name="Salida de columna derivada"
-                      synchronousInputId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Inputs[Entrada de columna derivada]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de columna derivada].Columns[CityRegion]"
-                          dataType="wstr"
-                          errorOrTruncationOperation="Cálculo"
-                          errorRowDisposition="FailComponent"
-                          length="100"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de columna derivada].Columns[CityRegion]"
-                          name="CityRegion"
-                          truncationRowDisposition="FailComponent">
-                          <properties>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Expresión de columna derivada"
-                              name="Expression">#{Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]} + #{Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]}</property>
-                            <property
-                              containsID="true"
-                              dataType="System.String"
-                              description="Expresión descriptiva de columna derivada"
-                              expressionType="Notify"
-                              name="FriendlyExpression">City + Region</property>
-                          </properties>
-                        </outputColumn>
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                    <output
-                      refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de error de columna derivada]"
-                      description="Salida de error de la transformación Columna derivada"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="Salida de error de columna derivada"
-                      synchronousInputId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Inputs[Entrada de columna derivada]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
-                  refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1"
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server"
                   componentClassID="Microsoft.SQLServerDestination"
                   contactInfo="Destino de SQL Server;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;5"
                   description="Destino de SQL Server"
-                  name="Destino de SQL Server 1"
+                  name="Destino de SQL Server"
                   version="5">
                   <properties>
                     <property
@@ -803,7 +441,7 @@ WHERE Nombre=@N;</property>
                       dataType="System.String"
                       description="El nombre del objeto de base de datos en el que copiar datos."
                       expressionType="Notify"
-                      name="BulkInsertTableName">[Destino de SQL Server 1]</property>
+                      name="BulkInsertTableName">[Destino de SQL Server]</property>
                     <property
                       dataType="System.Boolean"
                       description="Especifica que todas las restricciones del objeto de destino se comprueben durante la operación de copia de datos. Corresponde a la opción CHECK_CONSTRAINTS de inserción masiva."
@@ -855,7 +493,7 @@ WHERE Nombre=@N;</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Connections[OleDbConnection]"
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Connections[OleDbConnection]"
                       connectionManagerID="{AA759A79-83F2-479C-B492-EE7617CD5F09}:external"
                       connectionManagerRefId="Project.ConnectionManagers[(local).Proyecto2]"
                       description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -863,202 +501,202 @@ WHERE Nombre=@N;</property>
                   </connections>
                   <inputs>
                     <input
-                      refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server]"
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server]"
                       hasSideEffects="true"
                       name="Entrada de destino de SQL Server">
                       <inputColumns>
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[CustomerID]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[CustomerID]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="CustomerID"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CustomerID]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[CustomerID]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CustomerID]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[CompanyName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[CompanyName]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="CompanyName"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CompanyName]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CompanyName]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[CompanyName]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CompanyName]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[ContactName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[ContactName]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ContactName"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactName]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactName]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactName]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ContactName]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[ContactTitle]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[ContactTitle]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ContactTitle"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactTitle]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactTitle]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Address]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[Address]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Address"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Address]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Address]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Address]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Address]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[City]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[City]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="City"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[City]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[City]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[City]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Region]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[Region]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Region"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Region]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Region]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Region]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[PostalCode]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[PostalCode]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="PostalCode"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[PostalCode]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[PostalCode]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[PostalCode]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[PostalCode]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Country]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[Country]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Country"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Country]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Country]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Country]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Country]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Phone]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[Phone]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Phone"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Phone]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Phone]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Phone]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Phone]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[Fax]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[Fax]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Fax"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Fax]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Fax]" />
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Fax]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fax]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[ReverseCustomerID]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[ReverseID]"
                           cachedDataType="wstr"
                           cachedLength="50"
-                          cachedName="ReverseCustomerID"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ReverseCustomerID]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de columna derivada].Columns[ReverseCustomerID]" />
+                          cachedName="ReverseID"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[ReverseID]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de columna derivada].Columns[ReverseID]" />
                         <inputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].Columns[CityRegion]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].Columns[RegionCountry]"
                           cachedDataType="wstr"
                           cachedLength="100"
-                          cachedName="CityRegion"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CityRegion]"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de columna derivada].Columns[CityRegion]" />
+                          cachedName="RegionCountry"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[RegionCountry]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de columna derivada].Columns[RegionCountry]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CustomerID]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[CustomerID]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CustomerID" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CompanyName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[CompanyName]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CompanyName" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactName]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ContactName" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactTitle]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[ContactTitle]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ContactTitle" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Address]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Address]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Address" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[City]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[City]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="City" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Region]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Region]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Region" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[PostalCode]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[PostalCode]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="PostalCode" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Country]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Country]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Country" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Phone]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Phone]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Phone" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[Fax]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[Fax]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Fax" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[ReverseCustomerID]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[ReverseID]"
                           dataType="wstr"
                           length="50"
-                          name="ReverseCustomerID" />
+                          name="ReverseID" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server].ExternalColumns[CityRegion]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server].ExternalColumns[RegionCountry]"
                           dataType="wstr"
                           length="100"
-                          name="CityRegion" />
+                          name="RegionCountry" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
                 </component>
                 <component
-                  refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1"
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
                   description="Origen de archivo plano"
                   localeId="1033"
-                  name="Origen de archivo plano 1"
+                  name="Origen de archivo plano"
                   usesDispositions="true"
                   version="1">
                   <properties>
@@ -1073,25 +711,25 @@ WHERE Nombre=@N;</property>
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[111]"
-                      connectionManagerRefId="Package.ConnectionManagers[111]"
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[ConexionDinamica]"
+                      connectionManagerRefId="Package.ConnectionManagers[ConexionDinamica]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano]"
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
                       name="Salida de origen de archivo plano">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CustomerID]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CustomerID]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CustomerID]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CustomerID]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CustomerID]"
                           name="CustomerID"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1106,14 +744,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CompanyName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CompanyName]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CompanyName]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CompanyName]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[CompanyName]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CompanyName]"
                           name="CompanyName"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1128,14 +766,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ContactName]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactName]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactName]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactName]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ContactName]"
                           name="ContactName"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1150,14 +788,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactTitle]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactTitle]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[ContactTitle]"
                           name="ContactTitle"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1172,14 +810,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Address]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Address]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Address]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Address]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Address]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Address]"
                           name="Address"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1194,14 +832,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[City]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[City]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[City]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[City]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[City]"
                           name="City"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1216,14 +854,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Region]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Region]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Region]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Region]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Region]"
                           name="Region"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1238,14 +876,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[PostalCode]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[PostalCode]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[PostalCode]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[PostalCode]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[PostalCode]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[PostalCode]"
                           name="PostalCode"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1260,14 +898,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Country]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Country]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Country]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Country]"
                           name="Country"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1282,14 +920,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Phone]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Phone]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Phone]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Phone]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Phone]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Phone]"
                           name="Phone"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1304,14 +942,14 @@ WHERE Nombre=@N;</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Fax]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fax]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversión"
                           errorRowDisposition="FailComponent"
-                          externalMetadataColumnId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Fax]"
+                          externalMetadataColumnId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fax]"
                           length="50"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].Columns[Fax]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Fax]"
                           name="Fax"
                           truncationRowDisposition="FailComponent">
                           <properties>
@@ -1329,67 +967,67 @@ WHERE Nombre=@N;</property>
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CustomerID]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CustomerID]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CustomerID" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[CompanyName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[CompanyName]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="CompanyName" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactName]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactName]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ContactName" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactTitle]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[ContactTitle]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="ContactTitle" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Address]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Address]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Address" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[City]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[City]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="City" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Region]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Region]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Region" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[PostalCode]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[PostalCode]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="PostalCode" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Country]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Country" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Phone]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Phone]"
                           codePage="1252"
                           dataType="str"
                           length="50"
                           name="Phone" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano].ExternalColumns[Fax]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[Fax]"
                           codePage="1252"
                           dataType="str"
                           length="50"
@@ -1397,27 +1035,200 @@ WHERE Nombre=@N;</property>
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano]"
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
                       isErrorOut="true"
                       name="Salida de error de origen de archivo plano">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                           codePage="1252"
                           dataType="text"
                           description="Columna de salida de error de origen de archivo plano"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                           name="Columna de salida de error de origen de archivo plano" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                  name="Transformacion1"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Inputs[Entrada de columna derivada]"
+                      description="Entrada en la transformación Columna derivada"
+                      name="Entrada de columna derivada">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Inputs[Entrada de columna derivada].Columns[CustomerID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CustomerID"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CustomerID]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de columna derivada]"
+                      description="Salida predeterminada de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      name="Salida de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de columna derivada].Columns[ReverseID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Cálculo"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de columna derivada].Columns[ReverseID]"
+                          name="ReverseID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión de columna derivada"
+                              name="Expression">[REVERSE](#{Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[CustomerID]})</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión descriptiva de columna derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">REVERSE(CustomerID)</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de error de columna derivada]"
+                      description="Salida de error de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                  description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                  name="Transformacion2"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Inputs[Entrada de columna derivada]"
+                      description="Entrada en la transformación Columna derivada"
+                      name="Entrada de columna derivada">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Inputs[Entrada de columna derivada].Columns[Region]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Region"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Region]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Inputs[Entrada de columna derivada].Columns[Country]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Country"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Country]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de columna derivada]"
+                      description="Salida predeterminada de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      name="Salida de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de columna derivada].Columns[RegionCountry]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Cálculo"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de columna derivada].Columns[RegionCountry]"
+                          name="RegionCountry"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión de columna derivada"
+                              name="Expression">#{Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Region]} + #{Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[Country]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Expresión descriptiva de columna derivada"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Region + Country</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de error de columna derivada]"
+                      description="Salida de error de la transformación Columna derivada"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de columna derivada"
+                      synchronousInputId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Inputs[Entrada de columna derivada]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -1428,42 +1239,32 @@ WHERE Nombre=@N;</property>
               </components>
               <paths>
                 <path
-                  refId="Package\Foreach Loop Container\Transformacion.Paths[Salida de columna derivada]"
-                  endId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Inputs[Entrada de columna derivada]"
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+                  endId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Inputs[Entrada de columna derivada]"
                   name="Salida de columna derivada"
-                  startId="Package\Foreach Loop Container\Transformacion\Columna derivada.Outputs[Salida de columna derivada]" />
+                  startId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Outputs[Salida de columna derivada]" />
                 <path
-                  refId="Package\Foreach Loop Container\Transformacion.Paths[Salida de columna derivada1]"
-                  endId="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1.Inputs[Entrada de destino de SQL Server]"
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
+                  endId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server.Inputs[Entrada de destino de SQL Server]"
                   name="Salida de columna derivada"
-                  startId="Package\Foreach Loop Container\Transformacion\Columna derivada 1.Outputs[Salida de columna derivada]" />
+                  startId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2.Outputs[Salida de columna derivada]" />
                 <path
-                  refId="Package\Foreach Loop Container\Transformacion.Paths[Salida de origen de archivo plano]"
-                  endId="Package\Foreach Loop Container\Transformacion\Columna derivada.Inputs[Entrada de columna derivada]"
+                  refId="Package\Foreach Loop Container 1\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+                  endId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1.Inputs[Entrada de columna derivada]"
                   name="Salida de origen de archivo plano"
-                  startId="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1.Outputs[Salida de origen de archivo plano]" />
+                  startId="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
-          DTS:CreationName=""
-          DTS:DTSID="{6196A472-E11C-47CD-93D2-7DA1252A89D5}"
-          DTS:From="Package\Foreach Loop Container\Transformacion"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Foreach Loop Container\Tarea Flujo de datos 1" />
-      </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{3A0C59A5-0A0A-4967-B6D4-72640D08F031}"
-          DTS:ObjectName="{3A0C59A5-0A0A-4967-B6D4-72640D08F031}"
+          DTS:DTSID="{3BE1138D-94D6-49A4-82FF-AA3B64720B8E}"
+          DTS:ObjectName="{3BE1138D-94D6-49A4-82FF-AA3B64720B8E}"
           DTS:ValueIndex="0"
-          DTS:VariableName="User::archivo" />
+          DTS:VariableName="User::FullFilePath" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
@@ -1504,7 +1305,7 @@ WHERE Nombre=@N;</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Descomprimir"
           DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:PropertyExpression
             DTS:Name="Arguments">"e "+@[User::NombreArchivoRar]+" -o+"</DTS:PropertyExpression>
@@ -1526,16 +1327,347 @@ WHERE Nombre=@N;</property>
           DTS:VariableName="User::NombreArchivoRar" />
       </DTS:ForEachVariableMappings>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:Disabled="True"
+      DTS:DTSID="{EC1D79DC-372D-4BC1-B4BB-7DBE0ABAC988}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tarea Flujo de datos 1\Comando de OLE DB"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Ejecuta una instrucción SQL para cada fila de un flujo de datos. Por ejemplo, se usa para llamar al procedimiento almacenado de configuración de nuevo empleado para cada fila de la tabla de nuevos empleados. Nota: la ejecución de una instrucción SQL para cada fila de un flujo de datos de gran tamaño puede tardar mucho tiempo."
+              name="Comando de OLE DB"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">Declare @F as Date=?
+Declare @N as varchar(100)=?
+
+Update Archivos
+set Inicio=@F
+WHERE Nombre=@N;</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{AA759A79-83F2-479C-B492-EE7617CD5F09}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[(local).Proyecto2]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]"
+                  errorOrTruncationOperation="Ejecución de comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de comando de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].Columns[Final]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Final"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Final]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].Columns[Nombre]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Nombre"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Nombre]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      dataType="dbDate"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de comando de OLE DB]"
+                  exclusionGroup="1"
+                  name="Salida de comando de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de comando de OLE DB"
+                  synchronousInputId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tarea Flujo de datos 1\Origen de OLE DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[Archivos]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{AA759A79-83F2-479C-B492-EE7617CD5F09}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[(local).Proyecto2]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Nombre]"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Nombre]"
+                      name="Nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Encabezado]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Encabezado]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Encabezado]"
+                      name="Encabezado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CantidadRegistros]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CantidadRegistros]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[CantidadRegistros]"
+                      name="CantidadRegistros"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Inicio]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Inicio]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Inicio]"
+                      name="Inicio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Final]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Final]"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Final]"
+                      name="Final"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Encabezado]"
+                      dataType="bool"
+                      name="Encabezado" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[CantidadRegistros]"
+                      dataType="i4"
+                      name="CantidadRegistros" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Inicio]"
+                      dataType="dbTimeStamp"
+                      name="Inicio" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Final]"
+                      dataType="dbTimeStamp"
+                      name="Final" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Nombre]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Nombre]"
+                      name="Nombre" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Encabezado]"
+                      dataType="bool"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Encabezado]"
+                      name="Encabezado" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CantidadRegistros]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[CantidadRegistros]"
+                      name="CantidadRegistros" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Inicio]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Inicio]"
+                      name="Inicio" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Final]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Final]"
+                      name="Final" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tarea Flujo de datos 1.Paths[Salida de origen de OLE DB]"
+              endId="Package\Tarea Flujo de datos 1\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Tarea Flujo de datos 1\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{98B213E6-EC85-492F-90B1-FA7624B5BF0B}"
+      DTS:DTSID="{08A6219B-1EE7-4B9F-A2E1-9BEFB4AAE2E9}"
       DTS:From="Package\Loop Para descomprimir"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Foreach Loop Container" />
+      DTS:To="Package\Foreach Loop Container 1" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1552,44 +1684,7 @@ WHERE Nombre=@N;</property>
         <NodeLayout
           Size="163,42"
           Id="Package\Execute SQL Task"
-          TopLeft="196,343" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1"
-          TopLeft="59,199" />
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Foreach Loop Container\Transformacion"
-          TopLeft="75.5,113" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="151.5,155">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44"
-              Start="0,0"
-              End="0,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="337,296"
-          Size="337,339"
-          Id="Package\Foreach Loop Container"
-          TopLeft="652,350" />
+          TopLeft="114,340" />
         <NodeLayout
           Size="144,42"
           Id="Package\Loop Para descomprimir\Descomprimir"
@@ -1600,33 +1695,48 @@ WHERE Nombre=@N;</property>
           PanelSize="247,107"
           Size="247,150"
           Id="Package\Loop Para descomprimir"
-          TopLeft="677,135" />
+          TopLeft="627,131" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Tarea Flujo de datos 1"
+          TopLeft="118,428" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos"
+          TopLeft="71,87" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="304,250"
+          Size="304,293"
+          Id="Package\Foreach Loop Container 1"
+          TopLeft="561,373" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="800.5,285">
+          TopLeft="750.5,281">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20,65"
+              EndConnector="-37.5,92"
               Start="0,0"
-              End="20,57.5">
+              End="-37.5,84.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,42" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.5"
-                    Point2="0,32.5"
-                    Point3="4,32.5" />
+                    Point1="0,42"
+                    Point2="0,46"
+                    Point3="-4,46" />
                   <mssgle:LineSegment
-                    End="16,32.5" />
+                    End="-33.5,46" />
                   <mssgle:CubicBezierSegment
-                    Point1="16,32.5"
-                    Point2="20,32.5"
-                    Point3="20,36.5" />
+                    Point1="-33.5,46"
+                    Point2="-37.5,46"
+                    Point3="-37.5,50" />
                   <mssgle:LineSegment
-                    End="20,57.5" />
+                    End="-37.5,84.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1639,20 +1749,20 @@ WHERE Nombre=@N;</property>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos 1">
+    design-time-name="Package\Tarea Flujo de datos 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="164,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB"
+          Id="Package\Tarea Flujo de datos 1\Origen de OLE DB"
           TopLeft="535.5,123.5" />
         <NodeLayout
           Size="177,42"
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1\Comando de OLE DB"
+          Id="Package\Tarea Flujo de datos 1\Comando de OLE DB"
           TopLeft="552.5,223.5" />
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Tarea Flujo de datos 1.Paths[Salida de origen de OLE DB]"
+          Id="Package\Tarea Flujo de datos 1.Paths[Salida de origen de OLE DB]"
           TopLeft="617.5,165.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1682,14 +1792,16 @@ WHERE Nombre=@N;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Tarea Flujo de datos 1\Origen de OLE DB">
+    design-time-name="Package\Tarea Flujo de datos 1\Origen de OLE DB">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1702,52 +1814,40 @@ WHERE Nombre=@N;</property>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Foreach Loop Container\Transformacion">
+    design-time-name="Package\Foreach Loop Container 1\Tarea Flujo de datos">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="173,42"
-          Id="Package\Foreach Loop Container\Transformacion\Columna derivada 1"
-          TopLeft="450.5,386.5" />
+          Size="191,42"
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos\Origen de archivo plano"
+          TopLeft="461,188" />
         <NodeLayout
-          Size="194,42"
-          Id="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1"
-          TopLeft="429,455" />
+          Size="185,42"
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server"
+          TopLeft="458,530" />
         <NodeLayout
-          Size="200,42"
-          Id="Package\Foreach Loop Container\Transformacion\Origen de archivo plano 1"
-          TopLeft="444,87" />
+          Size="158,42"
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion1"
+          TopLeft="482,276" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\Foreach Loop Container\Transformacion\Columna derivada"
-          TopLeft="468,296" />
+          Size="158,42"
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos\Transformacion2"
+          TopLeft="474,400" />
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Transformacion.Paths[Salida de columna derivada1]"
-          TopLeft="537,428.5">
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos.Paths[Salida de origen de archivo plano]"
+          TopLeft="558.75,230">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11,26.5"
+              EndConnector="0,46"
               Start="0,0"
-              End="-11,19">
+              End="0,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.25"
-                    Point2="0,13.25"
-                    Point3="-4,13.25" />
-                  <mssgle:LineSegment
-                    End="-7,13.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7,13.25"
-                    Point2="-11,13.25"
-                    Point3="-11,17.25" />
-                  <mssgle:LineSegment
-                    End="-11,19" />
+                    End="0,38.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1757,31 +1857,31 @@ WHERE Nombre=@N;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Transformacion.Paths[Salida de columna derivada]"
-          TopLeft="550,338">
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="561,318">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-13,48.5"
+              EndConnector="-8,82"
               Start="0,0"
-              End="-13,41">
+              End="-8,74.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.25" />
+                    End="0,37" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.25"
-                    Point2="0,24.25"
-                    Point3="-4,24.25" />
+                    Point1="0,37"
+                    Point2="0,41"
+                    Point3="-4,41" />
                   <mssgle:LineSegment
-                    End="-9,24.25" />
+                    End="-4,41" />
                   <mssgle:CubicBezierSegment
-                    Point1="-9,24.25"
-                    Point2="-13,24.25"
-                    Point3="-13,28.25" />
+                    Point1="-4,41"
+                    Point2="-8,41"
+                    Point3="-8,45" />
                   <mssgle:LineSegment
-                    End="-13,41" />
+                    End="-8,74.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1791,19 +1891,19 @@ WHERE Nombre=@N;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Foreach Loop Container\Transformacion.Paths[Salida de origen de archivo plano]"
-          TopLeft="547,129">
+          Id="Package\Foreach Loop Container 1\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
+          TopLeft="551.75,442">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,167"
+              EndConnector="0,88"
               Start="0,0"
-              End="0,159.5">
+              End="0,80.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,159.5" />
+                    End="0,80.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1816,7 +1916,7 @@ WHERE Nombre=@N;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\Transformacion\Destino de SQL Server 1">
+    design-time-name="Package\Foreach Loop Container 1\Tarea Flujo de datos\Destino de SQL Server">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

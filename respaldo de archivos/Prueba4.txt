@@ -1,4 +1,4 @@
-CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax;
+CustomerID,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax;|
 BSBEV,B''s Beverages,Victoria Ashworth,Sales Representative,Fauntleroy Circus,London,NULL,EC2 5NT,UK,(171) 555-1212,NULL|
 CACTU,Cactus Comidas para llevar,Patricio Simpson,Sales Agent,Cerrito 333,Buenos Aires,NULL,1010,Argentina,(1) 135-5555,(1) 135-4892|
 CENTC,Centro comercial Moctezuma,Francisco Chang,Marketing Manager,Sierras de Granada 9993,México D.F.,NULL,05022,Mexico,(5) 555-3392,(5) 555-7293|
